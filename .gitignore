@@ -1,0 +1,9 @@
+*.out
+*.ps
+*.aux
+*.toc
+*.log
+*.zip
+*.tgz
+*.tar.gz
+
