@@ -32,6 +32,10 @@ notSwitch = {'arent':'are not','couldnt':'could not','didnt':'did not','doesnt':
 def cleanData(ls):
     return ls.strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK')
 
+def doNotConsider(emo):
+    notConsiderd = set(['guilty','fear'])
+    return True if emo in notConsiderd else False
+
 def init(toLower=True):
     """
     Function to fill up some important global variables.
@@ -55,6 +59,8 @@ def init(toLower=True):
     with open(paths["data"]) as dFile:
         reader = csv.reader(dFile,delimiter='#')
         for row in reader:
+            if doNotConsider(row[0]):
+                continue
             testY.append(row[0])
             testX.append(cleanData(row[1]))
             #testX.append(row[1].strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK'))
