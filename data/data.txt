@@ -22,9 +22,6 @@ guilt#When one has neglected or been unjust to a good friend.
 joy#Passing an exam I did not expect to pass. 
 fear#When I climbed up a tree to pick apples. The angle of the ladder I was on did not enable me to get high enough. This implied that the ladder was not very stable. 
 anger#Friends who torture animals. 
-sadness#Same as in anger. 
-disgust#Friends who torture animals. 
-shame#Same as above friends who torture animals. 
 guilt#When excuses are necessary and I get out of doing it myself. 
 joy#When I had my children. 
 fear#When my 2 year old son climbed up and sat on the 7th floor balcony with his legs hanging out. He was holding on tightly to the upper railing of the balcony but he could have easily lost his balance when he sat down. 
@@ -34,7 +31,7 @@ disgust#When I nearly walked on a blindworm and then saw it crawl away.
 shame#When I saw my 18 year old son grab an oxygen mask as he had breathing difficulties. I had a bad conscience because I had not stopped smoking. Medication for the dilation of his breathing tubes also caused a sense of guilt in me. 
 guilt#I experience a sense of guilt as my middle son cannot express himself like other children neither verbally nor in writing. 
 joy#When my child was born. 
-fear#It was winter/spring and the ice was melting. I was far out on a jetty and I poked the ice with a long branch to try and break it. The branch went through the ice and I fell in the water closed in over my head. 
+fear#It was winter spring and the ice was melting. I was far out on a jetty and I poked the ice with a long branch to try and break it. The branch went through the ice and I fell in the water closed in over my head. 
 anger#Unjust accusations directed at me and my way of acting by someone close to me. 
 sadness#Failing an examination. 
 disgust#A drunkard fell started bleeding and wet himself. Disgust that turned into sadnessunpleasantness. 
@@ -198,10 +195,6 @@ guilt#Forced to fill in a questionnaire.
 joy#When I won a tennis match. 
 fear#When my dog ran out on thin ice last spring. 
 anger#When my tennis match was interrupted because a kid cycled right into the court. 
-sadness#No response. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
 joy#Celebrations on the graduation day with the orchestra playing in the garden I am a part of this orchestra. 
 fear#Risk of being involved in a fight after a party. 
 anger#I had a very heavy work load and two colleagues whom I have nothing against disturbed me by terror ringing i. e continously interrupting me by telephoning. 
@@ -221,32 +214,20 @@ fear#Was nearly knocked down by a car.
 anger#I reached the bus stop and realized that I had forgotten my bus pass. 
 sadness#My current work load is too much. The feeling comes back from time to time. 
 disgust#Can not think of any situation. 
-shame#No response. 
-guilt#No response. 
 joy#When my one year old son gives me a spontaneous kiss. 
 fear#When someone close to me is travelling by car and is delayed. 
 anger#When someone does something wrong which affects me negatively. 
 sadness#When I think about my parents getting old. 
 disgust#Can not remember. 
-shame#No response. 
 guilt#I do not have the time for other peoples problems. My motherinlaw is sometimes depressed and I do not have the time the desire or the strength to help. 
 joy#An excolleague asked me if I was interested in working in their accounts bureau. They needed clever people and he had immediately thought of me. 
 fear#I was driving and a deer suddenly appeared in front of the car when there was a lot of traffic behind me. 
 anger#I saw a report on T. V news on apartheid in South Africa. 
-sadness#No response. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
 joy#When my girlfriend became pregnant. 
 fear#When I nearly collided with another car. 
 anger#The time when someone let the air out of the tyres of my cycle. 
 sadness#When I read a lot and did not remember anything. 
-disgust#No response. 
-shame#No response. 
 guilt#The time that I had to put my dog to sleep. 
-joy#No response. 
-fear#No response. 
-anger#No response. 
 sadness#Long illness. 
 joy#When I passed an exam. 
 fear#When I was travelling by tram I tripped and fell against the door. I thought that I was going to fall out. 
@@ -495,32 +476,13 @@ shame#When I excreted on the mat instead of the potty.
 guilt#When I pulled a chair from under someone at kindergarten and he hit his head. 
 joy#When I passed the driving test three weeks ago and got my licence. 
 fear#When the car I was driving skidded on an icy road and landed in a ditch with one side against a rock. 
-anger#No response. 
-sadness#No response. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
 joy#When I met friends I had not seen for the last 24 years. 
 fear#When a guy chased me when I was out jogging. 
-anger#No response. 
-sadness#No reponse. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
-joy#No response. 
-fear#No response. 
 anger#When the morning newspaper has not arrived. 
-sadness#No response. 
-disgust#No response. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
 joy#I feel unbelievably happy about the relationship between my boyfriend and me it is a reoccurring feeling. 
 fear#A reoccurring fear that something will happen to my relatives. 
 anger#When I argue with my boyfriend I feel as though he feels superior to me. 
 sadness#When I failed an exam last Summer. I had worked very hard for it and I was very disappointed thinking that it was hopeless to continue at college. I did overreact. 
-disgust#No response. 
-shame#No response. 
 guilt#When I argue with my sister. It feels sometimes that I have the upper hand and I use it. I often argue better and this makes her terribly angry. 
 joy#I was very happy when I got an attractive Summer job. 
 joy#The birth of my child. 
@@ -604,21 +566,15 @@ fear#When I am travelling by car and have to meet an oncoming car while overtaki
 anger#When a close relative is treated badly. 
 sadness#When a close friend died. 
 disgust#When I saw all the starving people in Ethiopia on T. V. It felt awful to see such suffering. 
-shame#No response. 
 guilt#When a mistake occurred at work which I was not responsible for. This was disclosed later. 
 joy#When I called my boyfriend he asked me if I would live with him. 
 fear#Last Summer in Italy I was attacked by a dog. It was terrible to feel that untidy dirty dog against my naked skin. 
 anger#When my fathers new fiancee treats me like a child. She does not trust me and constantly misunderstands me. I get particularly angry when she says nasty things about my boyfriend with whom she works. 
 sadness#When the guy I was in love with told me that he had met someone else and that we would not meet again for a year. Although we did not have a steady relatioship we were having an affair. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
 joy#When my love for a guy was returned. 
 fear#When I think of death not my own but that of my parents brothers and sisters. 
 anger#My parents did not approve my choice of a boyfriend now an exboyfriend. He happened to be 13 years older than me and he was considered completely unsuitable for me. IDIOT. 
-sadness#No response. 
 disgust#When my uncle comes 3 times a year for the traditional Christmas dinner with my grandparents and other relatives and is very drunk. 
-shame#No response. 
 guilt#I was living at home during the Summer vacations and towards the end decided to take some of my clothes and other belongings to the appartment in Guttenburg. When I had finished I went to my exboyfriends relationship uncertain home and stayed there till 5 A. M. I had to leave then as my parents needed the car for work in the morning. My parents do not like my boyfriend. 
 joy#I met my present boyfriend on a boat trip to England. We had said that we would call each other when we got back to Sweden we were not going to the same town in England. As soon as I walked in he called from England as he could not wait till he came home. 
 fear#When my mothers heart nearly stopped. 
@@ -636,15 +592,11 @@ shame#The day after the night I drank too much at a party.
 guilt#Can not think of anything. 
 joy#When I was accepted as a student of Psychology here at Gutttenburg. 
 fear#I woke up in the middle of the night as I had jumped and shouted with fear. I thought that someones cold hand or something similar had touched my hand. I crept down under the covers and went back to sleep. 
-anger#No response. 
-sadness#No response. 
 disgust#When I was a young teenager 14 my brotherinlaw to be had made heavy advances to me. I did not understand very well what it was all about but I reacted strongly and the feelings are still there. 
-shame#No response. 
 guilt#I broke off with my partner as I wanted him as a friend and not as a lover. He reacted very violently and I felt guilty as I had made him so desperately unhappy. 
 joy#I made dinner for some friends and they appreciated it very much. 
 fear#I was nearly knocked down while I was cycling. 
 anger#My father and I had an argument because I do not help enough at home. 
-sadness#No response. 
 disgust#I had intercourse with someone and then I realized that what I had done was wrong and it disgusted me. 
 shame#Do not know. 
 guilt#I said nasty things which I did not mean to a friend. 
@@ -664,25 +616,18 @@ shame#I do not remember when I last felf ashamed. I do not usually feel ashamed 
 guilt#My mother accused me of not visiting her enough when she was in hospital for an eye operation. 
 joy#After I had made my debut at Ullevi against IFK Gottenburg and got a good write up in the paper. 
 fear#When I was 78 years old I woke up one night and found myself alone at home. My mother had gone out to buy cigarattes from a machine. 
-anger#No response. 
 sadness#When I found out that I had failed to pass my exams during the term by one point. The fact that exactly the same thing had happened last term did not help. 
 disgust#When I was touring Asia with my present football team I saw old Europeans with young asiatic prostitutes. 
-shame#No response. 
-guilt#No response. 
 joy#As an evening class teacher I got positive feedback. When the atmosphere is good and a kind of relaxed understanding exists. 
 fear#After mischieviously ringing on the chemists tradeentrance doorbell and getting caught by him. 
 anger#The sight of a man who ran amok fighting at a dance. 
 sadness#When out of work. 
 disgust#With my mouth full of bun I drank directly from a packet of milk which turned out to be weeks old completely separated. It took a while for the milk to seep through the bun. 
-shame#No response. 
 guilt#A boy who shot dead a squirrel. 
 joy#When I was accepted as supervisor for a student teacher. The notification came by post. 
 fear#When I was involved in a car accident last November after the first fall of snow. I lost control of the car and it spun round and landed on the opposite side of the road on the hard shoulder. It was stopped by a pole on top of a bank sloping down to a stream. 
 anger#With the job appointments committee when the headmaster in charge explained that a male teacher was more suitable for the particular post. I had more years of service than the male teacher but this was not taken into consideration. I could have been given a less attractive job if things had gone the way the headmaster wanted. 
 sadness#A colleagues 17 year old daughter is seriously ill with cancer and has only a year to live. I heard about it 6 weeks ago. 
-disgust#No response. 
-shame#No response. 
-guilt#No response. 
 joy#When a close friend met me at the station in the middle of the night when I came back from a long and tiring journey. 
 fear#Having quarreled with a boyfriend he threatened to leave me. 
 anger#Someone didnt show up at a meeting in spite of having agreed to come. 
@@ -919,7 +864,6 @@ anger#I had a discussion with my mother concerning my sisters divorce we disagre
 sadness#As a tenyearold I was at the funeral of my grandfather. It was more the ceremonies held in the church and not really the death of my grandfather which made me sad. 
 disgust#I had a discussion with my wife about an overweight acquaintance of ours about her eating habits and the scars caused by her pregnancy. 
 shame#When I confessed to my girlfriend now my wife that I had betrayed her with another woman. 
-guilt#The same as in shame. 
 joy#A successful lesson. 
 fear#I was thinking about death. 
 anger#A conflict with a pupil. 
@@ -968,7 +912,6 @@ anger#An unfair punishment.
 sadness#Loneliness being uncertain of myself in the Autumn. 
 disgust#A rich man expressing disgust towards an alcoholic. 
 shame#A man asked me: May I sleep in your stairway? and I answered No. 
-guilt#The same as in shame. 
 joy#I went to a doctor with a complaint. The doctor told me that I was completely healthy. 
 fear#My father was away from home and he did not come back when he was expected he came back several hours later than expected. 
 anger#I had an implicit agreement with my sister about meeting her however she had not understood the situation the same way so she did not turn up. 
@@ -1063,7 +1006,6 @@ joy#I started a new branch of studies after having failed a former one. When I g
 fear#I was diving below the ice in a cave at a depth of 26 metres. Visibility was almost zero and the oxygen level decreased threateningly. There were three of us divers on one safety rope. 
 anger#My mother carried on using mental pressure concerning something which was serious and a real burden to me. 
 sadness#My grandfather died I went to the mortuary and saw the corpse. 
-disgust#The same as in anger. 
 shame#As a child when I was blamed for peeing in the swimmingpool. 
 guilt#A friend of mine was drunk and having an argument on the street with a woman appparently his girlfriend. I was walking on the other side of the street and thought that I was not supposed to interfere. Later I heard that he had shot himself that evening. 
 joy#My girlfriend sent me a letter with a shiny picture in it. 
@@ -3585,7 +3527,6 @@ guilt#When I took a car which was not mine and suddenly it stopped working.
 joy#When the Real Madrid team of basket ball qualified for the final of the Europe Cup at Athens. 
 fear#On the scenic railway at the fairground. 
 anger#At having an argument with a stranger in the street. 
-sadness#The same as in guilt. 
 disgust#When I entered a toilet in a bar and it stank. 
 joy#The day I finished my military service. 
 fear#When I was a child one day I was going home late at night and I did not notice an uncovered man hole and fell in it. I was in there for several minutes. 
@@ -4431,7 +4372,6 @@ shame#The parents of a friend of mine surprised us and another couple sleeping i
 guilt#A friend of mine felt bad because of something I had done to something that belonged to him. 
 joy#When they told me that I had been admitted to the faculty of medicine. 
 fear#Almost always when I go to fetch the results of an exam. 
-anger#No description. 
 sadness#When I decided not to out any longer with a girl whom I liked quite a lot. This made me feel low for a some time. 
 disgust#I saw a program on T. V where they had to saw a skull for an operation. 
 shame#I was watching T. V with my parents and some pornographic scenes came on I felt uncomfortable and tried to distract my parents attention by talking to them. 
@@ -4509,14 +4449,12 @@ guilt#When I noticed the negative changes in a friends behaviour.
 joy#I was going to my village after having been rather oppressed in Madrid. 
 fear#I was watching a procession during the Holy week and a penitent approached me. 
 anger#My mother read a letter that a friend of mine had written to me telling me how she had got drunk the last time. 
-sadness#No response. 
 disgust#I found a cockroach crushed between two folders in my bedroom I called my mother. 
 shame#I ride my motorbike in my village and everyone stares at me as if I was a rare specimen. 
 guilt#I was spending a few days at my aunts place. One night I got home very late I had told them I was going to a party but I went to another place. They were very worried. 
 joy#Last Summer I achieved someting that I had been wanting for a long time. 
 fear#I was in a camp and went out for a walk at night on my own. I lost my way and spent several hours looking for the camp. 
 anger#My parents scolded me a lot for something I had not done. It was my sister who had done it. 
-sadness#No response. 
 disgust#At the hypocrisy of some of my friends. 
 shame#I greeted and embraced the wrong person thinking that it was my friend. 
 guilt#Due to a misunderstanding on my part two of my best friends quarelled. 
@@ -5140,8 +5078,7 @@ disgust#I was disgusted at the way the bus conductor threw out an old woman oiut
 shame#I had a feeling of shame when I found myself unable to answer some questions from my tutor simply because of a lack of preparation. 
 fear#This last August when my parents dropped me off and moved me into college I didnt know anybody here I was 17 and Berkeley really scared me. 
 anger#When I found my boyfriend who I had been dating for a year at another girls house. We had had previous conflicts concerning the girl but he had always claimed they were just friends. 
-sadness#The same as for SHAME and DISGUST. I was asked to resign my sorority which I did because I was ashamed. 
-disgust#The same as in SHAME. 
+sadness#I was asked to resign my sorority which I did because I was ashamed. 
 shame#On a road trip with a group of sorority and fraternity people I became intoxicated and basically raped. I dont remember the actual event but I know the feeling that I experienced later. 
 guilt#When I got fired from a job because I gave a discount to a friend. 
 joy#Our basketball team is undefeated in league play 40 currently. 
@@ -5978,12 +5915,10 @@ disgust#My husband falls ill and does not follow the doctors advice on the treat
 shame#Every time I do not write something well in English. 
 guilt#When I could neither measure up to the expectations of the teacher nor to my own expectations in one of the assignments. 
 joy#The day I got married was the happiest day of my life. Both of us felt that we were right for each other in every way and we had no doubts about our compatibility right from the day we got engaged. 
-fear#No response. 
 anger#One morning I was standing at the busstop and the bus passed by without stopping even though there were only 810 passengers inside. I felt angry at the rude behaviour of the bus driver and conductor. 
 sadness#At the death of my friends father and especially as this happened ten days before her wedding. 
 disgust#I was disgusted at the existing redtape in the government offices. I accquired my passport three months after having applied for it and I had to go back five times to them to correct a minor error. 
 shame#When I could not pass my exams with good marks. My wedding was to take place 15 days after the exams and I tried to convince myself that this was the reason for my not having done well. However I thought that had I really put my mind to doing well at the exams I would have done well. 
-guilt#No response. 
 joy#When I succeeded in achieving a scholarship for which I had strived hard during a period of financial personal and physical stress. 
 fear#When I had to travel alone unescorted for the first time. It was an overnight journey by train to a distant place. 
 anger#I was not given a chance to explain to my close relatives as to why I could not go to visit them when they were ill. When I did go they thought that I had been selfish and irresponsible duringtheir illness. 
@@ -6013,11 +5948,9 @@ disgust#When I see that the toilet is unclean.
 shame#When my coresident opened the bathroom door while I was bathing inside. 
 guilt#When I could not complete my assignment on time. 
 joy#At the preuniversity I was appreciated as an examplary student by our pricipal. This is something which made me feel very happy. 
-fear#No response. 
 anger#When I was blamed for some of my attributes which are very often misunderstood especially when one is very frank. 
 sadness#When my sister lost her only son who was sixteen years old. I felt very bad about it as this was the first death in my family and then I learned slowly to understand to life. 
 disgust#When I was in a Christian institution sometimes the nuns would send back the people who came to visit us when it was not the visiting hours. This disgusted me. 
-shame#No response. 
 guilt#Once I was not able to give a relative who was in a critical period a helping hand. Whenever I think about it I feel guilty for letting down the person who trusted me to give him a helping hand. 
 joy#The day I got a letter from the U. G. C informing me that I had been awarded the junior research fellowship. 
 fear#When I was working in Delhi I had gone alone to see the hostel where I would be residing. 
@@ -6060,7 +5993,6 @@ anger#I experience this emotion quite often but the day I was most angry was the
 sadness#I have once been very sad and lonely. This was when I was trying to organize a play as a student 15 years. Instead of materializing it fizzled out. The worst thing was that the play fell apart completely and I found myself weeping uncontrollably. Now when I think of it I laugh it off but at that time it was intense. 
 disgust#This is an incident that many of us witness in our everyday life in a city like Bombay. One day I was travelling by bus three men dragged two fellows out of the bus. Once outside they were beaten into pulp. These two fellows who got beaten were pickpockets and they were being beaten by all and sundry. I thought to myself what is life? . It is one hell of a place where everyone is after someone else. One waits to cut the throat of the other one just for a living money. When I think about such things the purpose of life etc I feel very disgusted and dejected. 
 shame#This is an event I will never forget. I am considered a good mimic. This particular day we were waiting for a professor to take her class. This professor had a peculiar accent and a very horrible way of lecturing and to top it all we had this class at the fag end of the day. So this particular day I got into my element and started imitating the professor and the professor entered the class right in the middle of it. I was unaware of her presence some of my friends tried to warn me but it was of no avail as I was too engrossed in mimicing. Then I suddenly noticed the silence and turned around to see her entering the class. I do not know till today if she actually saw what I had been doing or she had completely ignored it. Through out that lecture I died of shame. All the more shameful was the fact that she gave me a character certificate. 
-guilt#No response. 
 joy#This happened when it was finally confirmed that I had stood first in the university for the M. A exams. A few days before the official results were declared a clerk had brought the results unofficially. So I had been expecting the results but the confirmation allowed me to legitimately feel happy at my success. 
 fear#This was when I was being followed home every day from the campus by a stranger. He would follow me to the campus and then sit outside my class. If I was not there he would ask my friends as to where I was. He was a dark ominous looking person and I was terrified of him as I did not know his intentions. I reported him to the security officer who turned him over to the police. I was even more petrified then. 
 anger#A new gas connection was to be installed and the mechanic who came to do it was very rude to my mother and me. I rushed to thhe dealer with my mother and had a fight with the dealer as he seemed to be unreasonable and was taking the mechanics side. Ultimately the matter was resolved after my father went and spoke to him. The mechanic was asked to apologize. 
@@ -6072,8 +6004,6 @@ joy#International sports events won by my favourite national team or player brin
 fear#When I had gone to a school picnic and was left behind in the forest. 
 anger#When I saw a few people beating a man who seemed to be a stranger. 
 sadness#When India lost the Benson and Hedges cricket trophy. 
-disgust#No response. 
-shame#No response. 
 guilt#When I was responsible for getting my friend runout in a vital cricket match. 
 joy#When India won the Prudential cup by beating WestIndies in the final match and became the world cricket champion. WestIndies was the strongest of the eight countries which participated in the competition. 
 fear#As a child one evening I had read a novel about ghosts and I had thus spent a sleepless night as I kept feeling that there were ghosts dancing around me. 
@@ -6115,8 +6045,6 @@ fear#I was then in the 10th standard and was going to my native place. The last 
 anger#I was travelling from Delhi to Bombay. I had booked a seat one month back and I had also got a telegram confirming this. However in the train my name had been omitted from the reservation sheet and the one seat that was still vacant was alloted to another person who paid for it despite my requests for the seat. I was allowed to stay in the reserved compartment when I paid money. 
 sadness#The news of the natural calamity an earthquake in which hundreds of Mexican people died. 
 disgust#In Punjab when in the name of religion people killed each other during the agitation. 
-shame#No response. 
-guilt#No response. 
 joy#I felt happy at the end of a 10 day student camp. We had shared our hopes and aspirations and in the open situation so generated we had made strong frienships and experienced our own worth as well. 
 fear#One of my fellow students had bunked field work and in my attempt to cover up for him I myself was exposed though not directly. We were to meet our field work suprevisor and we were afraid of the consequences. 
 anger#I had made an error in planning a programme and had publicly accepted the mistake despite repeated requests not to bring the matter for discussion a professor kept constantly passing remarks. I reacted angrily. 
@@ -6163,7 +6091,6 @@ joy#When I passed the 12th standard board exams.
 fear#My illness a few years back. I was sevely down with malaria and asthma I had lost my health charm and cheerfulness completely. 
 anger#During the short period of my unemployment about six years back. 
 sadness#My fathers death in January 1983 moved me deeply. The gloom prevailed for almost two years and I am still to recover from it. 
-disgust#No response. 
 shame#When I was 12 years old I was caught by the Ticket Collector when travelling without a ticket. 
 guilt#A few lies that I had indulged in a few years ago while raising loans from my friends. 
 joy#After having finished my B. Sc I was struggling hard to continue my studies and had taken the M. SC exam. I was not sure that I would be selected in the written exam. When I saw my name in the selected candidates list I was overjoyed. 
@@ -6176,10 +6103,8 @@ guilt#When I got low marks in the final year B. Sc exams I felt guilty as I had 
 joy#I was doing an experiment and was not getting the appropriate result despite the fact that I had repeated the procedure 45 times. Then finally I got it right by a stroke of luck. 
 fear#Once I was very frightened at night as I had a very fearful and terrifying dream I could not go back to sleep for a long time. 
 anger#Once I had an argument with my friends and I knew that I was right. My friends went on arguing with me even though they did not know the right thing. 
-sadness#No response. 
 disgust#My elder sister forced me to do a few things which I did not like to do. 
 shame#Once I had torn a few pages off a library book and I felt ashamed at this. 
-guilt#No response. 
 joy#When I realized that I loved someone of the opposite sex. 
 fear#After I was thrown out of a car in an accident this resulted in a fracture. 
 anger#During my childhood when I could not get what I wanted from my brother/sister and parents. 
@@ -6281,7 +6206,6 @@ joy#When I got my first unknown compound while doing my M. Sc research I was ver
 fear#I was very scared at the time of the Ty. B. Sc examination as I had decided to get 1st class results. I was afraid thinking of how the papers would be. 
 anger#When my neighbours accused my brother of stealing their rosebush I was very angry as he had not touched it at all. 
 sadness#When I heard that my girlfriend was getting married to another person I felt very sad. That day I did not eat anything and kept thinking of her all day long. 
-disgust#No response. 
 shame#When I had insulted my father two years back at that time I was very angry due to some reasons. 
 guilt#I felt very guilty when I tried to teach swimming to my younger brother as I myself could not swim very well and my brother had started sinking to the bottom however my elder brother saved him. 
 joy#This happened a year when I was having a hard time I got admission to do research despite obstacles in the procedure of admission. 
@@ -6329,7 +6253,6 @@ guilt#My friend had written a letter to me the contents of which I misunderstood
 joy#I have a girlfriend who is almost like a daughter to me. She is studying out of station and I get to see her only once a year. Her arrival is always a joyous one. 
 fear#While I was pushing a court roller out of a ditch I slipped and fell down and the roller rolled back towards me down slopeIt is a miracle that I still have my legs intact. 
 anger#I was the compere at a party and all my efforts to get the show rolling were thwarted by the immobile non cooperative guests. I felt frustation bordering on anger. 
-sadness#No response. 
 disgust#A railways officer when asked by the ticket checker to produce his tickets got very aggressive and started abusing and using his authority in a very wrong way. 
 shame#I am quite shameless not applicable. 
 guilt#Not applicable. 
@@ -6338,8 +6261,6 @@ fear#When I was treated improperly by someone.
 anger#When bad and disgusting language is uttered by people or when someone tries to show what is beyond his own capacities. 
 sadness#I missed my twin when I was on the verge of being thrown which I disliked. 
 disgust#When Kanishka was blown up I really felt disgusted at people killing each other. 
-shame#No response. 
-guilt#No response. 
 joy#When I received the best actor award at the intercollege drama competition. It gave me tremendous joy and satisfaction which lasted for several days. 
 fear#When my mother met with a serious accident and there was danger that she would not survive and if she did she would loose her memory. 
 anger#When an acquaintance of mine beat up another person for no just reason and thus showed off his power. 
@@ -7342,15 +7263,9 @@ sadness#The quarrel between my parents.
 disgust#During the Chinese lessons a student often showed off. Moreover he misbehaved and dressed very badly. So disgusting! 
 shame#I saw a bag on the street and just then a stranger passed by. I picked up the bag immediately and gave it to the stranger as I thought that it belonged to him. But it was not his bag and I felt ashamed. 
 guilt#I refused to lend my homework to a friend. 
-joy#No response. 
 fear#Once before I had learnt to swim I stepped on a slippery slope where there was a lot of moss and I slipped into the water. The water was very deep and I could not stand on my feet. I sank and had to use a lot of energy. 
-anger#No response. 
-sadness#No response. 
 disgust#One day when I was sitting in a not very crowded bus a middle aged woman was standing beside me. The person sitting next to me got up to get off and this woman pushed me and occupied the seat. Then she took off her shoes and put her feet on the seat. 
-shame#No response. 
-joy#No response. 
 fear#When I saw a horrible movie Alien. 
-anger#No response. 
 sadness#In 1983 my results at the university entrance exam were very poor far from what I had expected. I thought that I would not be accepted at the university. 
 disgust#I am disgusted by people who spoil their identity because of misbehaviour. This morning when I was in a crowded bus I found a seat on which a university student was sitting on one side and he had put his bag and files next to him. There was very little space left and I sat down while he kept on reading. Even when I leaned on him he did not put his bag away. He did not respond and I felt very angry. 
 shame#During a lecture six students including me were asked to leave the class as we had not prepared for the lesson. I felt ashamed and angry. 
@@ -7392,7 +7307,6 @@ shame#When I was young my mother told the neighbour that I had wet the bed. I fe
 guilt#One day while we were strolling along the road one of my friends suggested that we go and watch a blue film. I was curious so I went along but I felt quite guilty later. 
 joy#The day the results of the university entrance exam was published I found my canditate number and I was very excited. 
 fear#One night we were having a barbecue on the beach and I needed to go to my car which was far away from the beach. It was very dark as there were no street lamps. I ran in the dark very scared I ran as fast as possible. 
-anger#No response. 
 sadness#I separated with the one I liked most. She refused all my dates and told me that she had dated another one. My heart seemed to cease beating. I was silent for some time and then I whispered goodbye and left without turning back. 
 disgust#When I was a teacher in an evening school a girl raised a lot of questions and expressed her opinions. She very often took a stand which was different from mine and she thought that it was better than mine. Her opinions were helpful academically but she did not take into consideration my position in public. Also she seemed to be very talkative and so she disgusted me. 
 shame#I had lunch in a restaurant with a friend and I paid the bill. The change was that of a two dollar and a ten cent coin. As I was talking with my friend I took the two dollar coin and forgot to leave a tip. 
@@ -7559,9 +7473,7 @@ disgust#I made friends with a classmate whose behaviour I did not like he tried 
 shame#My guilty behaviour was found out by others. 
 guilt#When my behaviour was immoral thinking about sex. 
 joy#During my Summer vacations I planned a carnival for the community youth center with a few other volunteers. I was the head of the organizors and we spent over a month planning it. During this period we got to know and understood each other. We discovered each others potential and we planned many interesting things for the carnival. The day of the carnival everything was bright the programmes went well and the attendants enjoyed it. I felt extremely excited about it. 
-fear#No response. 
 anger#I was a prefect at secondary school. On the sports day I told others that I would take down the names of the people who misbehaved and after some time I sat down for a brief rest. Suddenly the head prefect came and scolded me in front of others. I was very angry as there were other prefects sitting and he picked on me. I thought that a brief rest was not serious enough to be blamed. 
-sadness#No response. 
 disgust#I had joined a youth group that observed the affairs of our community and so I had many opportunities to contact the government and the committee members of the district board a local executive structure. We always tried to consult and discuss with them but we found that such people did not understand community affairs and they even dampened our enthusiasm in local affairs. I did not understand why they had decided to work as community leaders. 
 shame#One day I was the leader of the weekly meeting of the Church fellowship. That day I had been preparing for the exams and did not estimate the time to travel to the church right and I was twenty minutes late. As I had not prepared well I led the meeting badly. I was ashamed of myself. 
 guilt#I borrowed my classmates notebook one week before the examination and I promised to give it back to her in two days time. I was very busy at that time and forgot many things as I was not very often at home she could not contact me. When I started my revision I realized that her notebook had been on my desk for five days. I contacted her immediately and gave it back to her. Though she did not say anything I felt very guilty. 
@@ -7655,9 +7567,9 @@ anger#Two years back someone invited me to be the tutor of her granddaughter. Th
 sadness#I had taken the responsibility to do something and I had prepared for it. However I failed because of my timidity. After three attempts I still could not adapt to the atmosphere and failed as before. I felt imcompetent and felt that the others would think that I had not prepared for it. 
 disgust#I was at home and I heard a loud sound of spitting outside the door. I thought that one of my family members would step on the spit and bring the germs in the house. 
 shame#I did not do the homework that the teacher had asked us to do. I was scolded immediately. 
-guilt#I had shouted at my younger brother and he was always afraid when I called out loudly.
-anger#I hate everything in the world.
-anger#I hate my teacher as he scolds me unnecessarily.
-sadness#My friend started to hate me when I ratted him out.
-joy#Oh the carefree days of childhood.
-joy#I love playing childrens games.
+guilt#I had shouted at my younger brother and he was always afraid when I called out loudly. 
+anger#I hate everything in the world. 
+anger#I hate my teacher as he scolds me unnecessarily. 
+sadness#My friend started to hate me when I ratted him out. 
+joy#Oh the carefree days of childhood. 
+joy#I love playing childrens games. 

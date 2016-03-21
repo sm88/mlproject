@@ -22,9 +22,6 @@
 22---joy---Passing an exam I did not expect to pass.
 23---fear---"When I climbed up a tree to pick apples.  The angle of the ladder I was on did not enable me to get high enough.  This implied that the ladder was not very stable."
 24---anger---Friends who torture animals.
-25---sadness---[ Same as in anger.]
-26---disgust---Friends who torture animals.
-27---shame---[ Same as above - friends who torture animals.]
 28---guilt---[ When excuses are necessary and I get out of doing it myself.]
 29---joy---When I had my children.
 30---fear---"When my 2 year old son climbed up and sat on the 7th floor balcony with his legs hanging out.  He was holding on tightly to the upper railing of the balcony but he could have easily lost his balance when he sat down."
@@ -34,7 +31,7 @@
 34---shame---"When I saw my 18 year old son grab an oxygen mask as he had breathing difficulties.  I had a bad conscience because I had not stopped smoking.  Medication for the dilation of his breathing tubes also caused a sense of guilt in me."
 35---guilt---"I experience a sense of guilt as my middle son cannot express himself like other children, neither verbally nor in writing."
 36---joy---When my child was born.
-37---fear---"It was winter/spring and the ice was melting.  I was far out on a jetty and I poked the ice with a long branch to try and break it.  The branch went through the ice and I fell in, the water closed in over my head."
+37---fear---"It was winter spring and the ice was melting.  I was far out on a jetty and I poked the ice with a long branch to try and break it.  The branch went through the ice and I fell in, the water closed in over my head."
 38---anger---"Unjust accusations directed at me and my way of acting, by someone close to me.  "
 39---sadness---Failing an examination.
 40---disgust---"A drunkard fell, started bleeding and wet himself.  Disgust that turned into sadness-unpleasantness."
@@ -198,10 +195,6 @@
 198---joy---When I won a tennis match.
 199---fear---When my dog ran out on thin ice last spring.
 200---anger---"When my tennis match was interrupted because a kid cycled right into the court."
-201---sadness---[ No response.]
-202---disgust---[ No response.]
-203---shame---[ No response.]
-204---guilt---[ No response.]
 205---joy---"Celebrations on the graduation day with the orchestra playing in the garden ( I am a part of this orchestra)."
 206---fear---Risk of being involved in a fight after a party.
 207---anger---"I had a very heavy work load and two colleagues, whom I have nothing against, disturbed me by ""terror ringing"", i.e continously interrupting me by telephoning."
@@ -221,32 +214,20 @@
 221---anger---"I reached the bus stop and realized that I had forgotten my bus pass."
 222---sadness---"My current work load is too much.  The feeling comes back from time to time."
 223---disgust---[ Can not think of any situation.]
-224---shame---[ No response.]
-225---guilt---[ No response.]
 226---joy---When my one year old son gives me a spontaneous kiss.
 227---fear---When someone close to me is travelling by car and is delayed.
 228---anger---When someone does something wrong which affects me negatively.
 229---sadness---When I think about my parents getting old.
 230---disgust---[ Can not remember.]
-231---shame---[ No response.]
 232---guilt---"I do not have the time for other people's problems.  My mother-in-law is sometimes depressed and I do not have the time, the desire or the strength to help."
 233---joy---"An ex-colleague asked me if I was interested in working in their accounts bureau.  They needed ""clever people"" and he had ""immediately thought of me."""
 234---fear---"I was driving and a deer suddenly appeared in front of the car when there was a lot of traffic behind me."
 235---anger---I saw a report on T.V news on apartheid in South Africa. 
-236---sadness---[ No response.]
-237---disgust---[ No response.]
-238---shame---[ No response.]
-239---guilt---[ No response.]
 240---joy---When my girlfriend became pregnant.
 241---fear---When I nearly collided with another car.
 242---anger---The time when someone let the air out of the tyres of my cycle.
 243---sadness---When I read a lot and did not remember anything.
-244---disgust---[ No response.]
-245---shame---[ No response.]
 246---guilt---The time that I had to put my dog to sleep.
-247---joy---[ No response.]
-248---fear---[ No response.]
-249---anger---[ No response.]
 250---sadness---Long illness.
 251---joy---When I passed an exam.
 252---fear---"When I was travelling by tram, I tripped and fell against the door.  I thought that I was going to fall out."
@@ -495,32 +476,13 @@
 495---guilt---"When I pulled a chair from under someone at kindergarten and he hit his head."
 496---joy---"When I passed the driving test three weeks ago and got my licence."
 497---fear---"When the car I was driving skidded on an icy road and landed in   a ditch with one side against a rock."
-498---anger---[ No response.]
-499---sadness---[ No response.]
-500---disgust---[ No response.]
-501---shame---[ No response.]
-502---guilt---[ No response.]
 503---joy---When I met friends I had not seen for the last 2-4 years.
 504---fear---When a guy chased me when I was out jogging.
-505---anger---[ No response.]
-506---sadness---[ No reponse.]
-507---disgust---[ No response.]
-508---shame---[ No response.]
-509---guilt---[ No response.]
-510---joy---[ No response.]
-511---fear---[ No response.]
 512---anger---When the morning newspaper has not arrived.
-513---sadness---[ No response.]
-514---disgust---[ No response.]
-515---disgust---[ No response.]
-516---shame---[ No response.]
-517---guilt---[ No response.]
 518---joy---"I feel unbelievably happy about the relationship between my boyfriend and me, it is a reoccurring feeling."
 519---fear---A reoccurring fear that something will happen to my relatives.
 520---anger---"When I argue with my boyfriend, I feel as though he feels superior to me."
 521---sadness---"When I failed an exam last Summer.  I had worked very hard for it and I was very disappointed thinking that it was hopeless to continue at college.  I did overreact."
-522---disgust---[ No response.]
-523---shame---[ No response.]
 524---guilt---"When I argue with my sister.  It feels sometimes that I have the upper hand and I use it.  I often argue better and this makes her terribly angry."
 525---joy---I was very happy when I got an attractive Summer job.
 526---joy---The birth of my child.
@@ -604,21 +566,15 @@
 604---anger---When a close relative is treated badly.
 605---sadness---When a close friend died.
 606---disgust---"When I saw all the starving people in Ethiopia on T.V.  It felt awful to see such suffering."
-607---shame---[ No response.]
 608---guilt---"When a mistake occurred at work which I was not responsible for.  This was disclosed later."
 609---joy---When I called my boyfriend he asked me if I would live with him.
 610---fear---"Last Summer in Italy I was attacked by a dog.It was terrible to feel that untidy dirty dog against my naked skin."
 611---anger---"When my father's new fiancee treats me like a child.  She does not trust me and constantly misunderstands me.  I get particularly angry when she says nasty things about my boyfriend with whom she works."
 612---sadness---"When the guy I was in love with told me that he had met someone else and that we would not meet again for a year.  Although we did not have a steady relatioship, we were having an affair."
-613---disgust---[ No response.]
-614---shame---[ No response.]
-615---guilt---[ No response.]
 616---joy---When my love for a guy was returned.
 617---fear---"When I think of death - not my own but that of my parents, brothers and sisters."
 618---anger---"My parents did not approve my choice of a boyfriend (now an ex-boyfriend).  He happened to be 13 years older than me and he was considered completely unsuitable for me.  IDIOT."
-619---sadness---[ No response.]
 620---disgust---"When my uncle comes (3 times a year) for the traditional Christmas dinner with my grandparents and other relatives and is very drunk."
-621---shame---[ No response.]
 622---guilt---"I was living at home during the Summer vacations and towards the end decided to take some of my clothes and other belongings to the appartment in Guttenburg.  When I had finished I went to my ex-boyfriend's (relationship uncertain) home and stayed there till 5 A.M.  I had to leave then as my parents needed the car for work in the morning.  My parents do not like my boyfriend."
 623---joy---"I met my present boyfriend on a boat trip to England.  We had said that we would call each other when we got back to Sweden (we were not going to the same town in England).  As soon as I walked in he called from England as he could not wait till he came home."
 624---fear---When my mother's heart nearly stopped.
@@ -636,15 +592,11 @@
 636---guilt---[ Can not think of anything.]
 637---joy---"When I was accepted as a student of Psychology here at Gutttenburg."
 638---fear---"I woke up in the middle of the night as I had jumped and shouted with fear.  I thought that someone's cold hand or something similar had touched my hand.  I crept down under the covers and went back to sleep."
-639---anger---[ No response.]
-640---sadness---[ No response.]
 641---disgust---"When I was a young teenager (14)  my brother-in-law to be had made heavy advances to me.  I did not understand very well what it was all about but I reacted strongly and the feelings are still there."
-642---shame---[ No response.]
 643---guilt---"I broke off with my partner as I wanted him as a friend and not as a lover.  He reacted very violently and I felt guilty as I had made him so desperately unhappy."
 644---joy---I made dinner for some friends and they appreciated it very much.
 645---fear---I was nearly knocked down while I was cycling.
 646---anger---"My father and I had an argument because I do not help enough at home."
-647---sadness---[ No response.]
 648---disgust---"I had intercourse with someone and then I realized that what I had done was wrong and it disgusted me."
 649---shame---[ Do not know.]
 650---guilt---I said nasty things which I did not mean to a friend.
@@ -664,25 +616,18 @@
 664---guilt---"My mother accused me of not visiting her enough when she was in hospital for an eye operation."
 665---joy---"After I had made my debut at Ullevi against IFK, Gottenburg and got a good write up in the paper."
 666---fear---"When I was 7-8 years old, I woke up one night and found myself alone at home.  My mother had gone out to buy cigarattes from a machine."
-667---anger---[ No response.]
 668---sadness---"When I found out that I had failed to pass my exams during the term by one point.  The fact that exactly the same thing had happened last term did not help."
 669---disgust---"When I was touring Asia with my present football team, I saw old Europeans with young asiatic prostitutes."
-670---shame---[ No response.]
-671---guilt---[ No response.]
 672---joy---"As an evening class teacher I got positive feedback.  When the atmosphere is good and a kind of relaxed understanding exists."
 673---fear---"After mischieviously ringing on the chemist's trade-entrance doorbell and getting caught by him."
 674---anger---The sight of a man who ran amok (fighting) at a dance.
 675---sadness---When out of work.
 676---disgust---"With my mouth full of bun, I drank directly from a packet of milk which turned out to be weeks old (completely separated).  It took a while for the milk to seep through the bun."
-677---shame---[ No response.]
 678---guilt---A boy who shot dead a squirrel.
 679---joy---"When I was accepted as supervisor for a student teacher.  The notification came by post."
 680---fear---"When I was involved in a car accident last November, after the first fall of snow.  I lost control of the car and it spun round and landed on the opposite side of the road, on the hard shoulder.  It was stopped by a pole on top of a bank sloping down to a stream."
 681---anger---"With the job appointments committee when the headmaster in charge explained that a male teacher was more suitable for the particular post.  I had more years of service than the male teacher, but this was not taken into consideration.  I could have been given a less attractive job if things had gone the way the headmaster wanted."
 682---sadness---"A colleague's 17 year old daughter is seriously ill with cancer and has only a year to live.  I  heard about it 6 weeks ago."
-683---disgust---[ No response.]
-684---shame---[ No response.]
-685---guilt---[ No response.]
 686---joy---"When a close friend met me at the station in the middle of the night, when I came back from a long and tiring journey."
 687---fear---"Having quarreled with a boyfriend, he threatened to leave me."
 688---anger---"Someone didn't show up at a meeting in spite of having agreed to come."
@@ -919,7 +864,6 @@
 919---sadness---"As a ten-year-old I was at the funeral of my grand-father.  It was more the ceremonies held in the church and not really the death of my grand-father which made me sad."
 920---disgust---"I had a discussion with my wife about an over-weight acquaintance of our's, about her eating habits and the scars caused by her pregnancy."
 921---shame---"When I confessed to my girl-friend (now my wife) that I had betrayed her with another woman."
-922---guilt---"The same as in ""shame""."
 923---joy---[ A successful lesson.]
 924---fear---[ I was thinking about death.]
 925---anger---A conflict with a pupil.
@@ -968,7 +912,6 @@
 968---sadness---"Loneliness, being uncertain of myself in the Autumn."
 969---disgust---A rich man expressing disgust towards an alcoholic.
 970---shame---"A man asked me: ""May I sleep in your stairway?""  and I answered ""No""."
-971---guilt---[ The same as in shame.]
 972---joy---"I went to a doctor with a complaint. The doctor told me that I was completely healthy."
 973---fear---"My father was away from home and he did not come back when he was expected, he came back several hours later than expected."
 974---anger---"I had an implicit agreement with my sister about meeting her, however she had not understood the situation the same way so she did not turn up."
@@ -1063,7 +1006,6 @@
 1063---fear---"I was diving below the ice, in a cave, at a depth of 26 metres.  Visibility was almost zero and the oxygen level decreased threateningly.  There were three of us divers on one safety rope."
 1064---anger---"My mother carried on using mental pressure concerning something which was serious and a real burden to me."
 1065---sadness---"My grandfather died, I went to the mortuary and saw the corpse."
-1066---disgust---[ The same as in anger.]
 1067---shame---As a child when I was blamed for peeing in the swimming-pool.
 1068---guilt---"A friend of mine was drunk and having an argument on the street with a woman, appparently his girlfriend.  I was walking on the other side of the street and thought that I was not supposed to interfere.  Later I heard that he had shot himself that evening."
 1069---joy---My girlfriend sent me a letter with a shiny picture in it.
@@ -3585,7 +3527,6 @@
 3579---joy---"When the Real Madrid team of basket ball qualified for the final of the Europe Cup at Athens."
 3580---fear---On the scenic railway at the fairground.
 3581---anger---"At having an argument with a stranger, in the street."
-3582---sadness---[ The same as in guilt.]
 3583---disgust---When I entered a toilet in a bar and it stank.
 3584---joy---The day I finished my military service.
 3585---fear---"When I was a child, one day, I was going home late at night and I did not notice an uncovered man hole and fell in it.  I was in there for several minutes."
@@ -4431,7 +4372,6 @@
 4425---guilt---"A friend of mine felt bad because of something I had done to something that belonged to him."
 4426---joy---"When they told me that I had been admitted to the faculty of medicine."
 4427---fear---Almost always when I go to fetch the results of an exam.
-4428---anger---[ No description.]
 4429---sadness---"When I decided not to out any longer with a girl whom I liked quite a lot.  This made me feel low for a some time."
 4430---disgust---"I saw a program on T.V where they had to saw a skull for an        operation."
 4431---shame---"I was watching T.V with my parents and some pornographic scenes came on, I felt uncomfortable and tried to distract my parents attention by talking to them."
@@ -4464,7 +4404,7 @@
 4458---disgust---When I was walking in a field which had a lot of manure.
 4459---shame---"I liked a boy and I would feel shy and then blush.  The more I wanted to avoid it the more I blushed."
 4460---guilt---"I am not very affectionate and I feel guilty as I do not give as much affection as I receive."
-4461---joy---"I was spending the week-end with some friends.  We were waiting for another friend and we went to the meet him at the bus stop, a  woman we met there told us that the coach had already left.  I was afraid that I would not see my friend, but at last we found him."
+4461---joy---"I was spending the weekend with some friends.  We were waiting for another friend and we went to the meet him at the bus stop, a  woman we met there told us that the coach had already left.  I was afraid that I would not see my friend, but at last we found him."
 4462---fear---"I was walking down a little village at night.  There was nobody in the steet.  A dog began to bark, I felt that it was following me.  Then I began to run, the other dogs started barking too.  At last I arrived home."
 4463---anger---My parents did not let me go on holidays with my friends.
 4464---sadness---I was told that a friend of mine was going to Mexico for good.
@@ -4509,14 +4449,12 @@
 4503---joy---"I was going to my village, after having been rather oppressed in Madrid. "
 4504---fear---"I was watching a procession during the Holy week, and a penitent approached me."
 4505---anger---"My mother read a letter that a friend of mine had written to me telling me how she had got drunk the last time."
-4506---sadness---[ No response.]
 4507---disgust---"I found a cockroach crushed between two folders in my bedroom, I called my mother."
 4508---shame---"I ride my motorbike in my village and everyone stares at me as if I was a rare specimen."
 4509---guilt---"I was spending a few days at my aunt's place.  One night I got home very late, I had told them I was going to a party but I went to another place.  They were very worried."
 4510---joy---"Last Summer I achieved someting that I had been wanting for a long time."
 4511---fear---"I was in a camp and went out for a walk at night on my own.  I lost  my way and spent several hours looking for the camp."
 4512---anger---"My parents scolded me a lot for something I had not done.  It was my sister who had done it."
-4513---sadness---[ No response.]
 4514---disgust---At the hypocrisy of some of my friends.
 4515---shame---"I greeted and embraced the wrong person thinking that it was my friend."
 4516---guilt---"Due to a misunderstanding on my part, two of my best friends quarelled."
@@ -5140,8 +5078,7 @@
 5134---shame---"I had a feeling of shame when I found myself unable to answer some questions from my tutor simply because of a lack of preparation."
 5135---fear---"This last August when my parents dropped me off and moved me into college I didn't know anybody here; I was 17 and Berkeley really scared me."
 5136---anger---"When I found my boyfriend, who I had been dating for a year, at another girl's house. We had had previous conflicts concerning the girl, but he had always claimed they were just friends."
-5137---sadness---"The same as for SHAME and DISGUST. I was asked to resign my sorority which I did because I was ashamed."
-5138---disgust---The same as in SHAME.
+5137---sadness---"I was asked to resign my sorority which I did because I was ashamed."
 5139---shame---"On a road trip with a group of sorority and fraternity people, I became intoxicated and basically raped. I don't remember the actual event, but I know the feeling that I experienced later."
 5140---guilt---"When I got fired from a job because I gave a discount to a friend."
 5141---joy---Our basketball team is undefeated in league play (4-0) currently.
@@ -5978,12 +5915,10 @@
 5972---shame---Every time I do not write something well in English.
 5973---guilt---"When I could neither measure up to the expectations of the teacher nor to my own expectations in one of the assignments."
 5974---joy---"The day I got married was the happiest day of my life.  Both of us felt that we were right for each other in every way and we had no doubts about our compatibility right from the day we got engaged."
-5975---fear---[ No response.]
 5976---anger---"One morning I was standing at the bus-stop and the bus passed by without stopping, even though there were only 8-10 passengers inside.  I felt angry at the rude behaviour of the bus driver and  conductor."
 5977---sadness---"At the death of my friend's father and especially as this happened ten days before her wedding."
 5978---disgust---"I was disgusted at the existing red-tape in the government offices.  I accquired my passport three months after having applied for it and I had to go back five times to them to correct a minor error."
 5979---shame---"When I could not pass my exams with good marks.  My wedding was to take place 15 days after the exams and I tried to convince myself that this was the reason for my not having done well.   However, I thought that had I really put my mind to doing well at the exams I would have done well."
-5980---guilt---[ No response.]
 5981---joy---"When I succeeded in achieving a scholarship for which I had strived hard during a period of financial, personal and physical stress."
 5982---fear---"When I had to travel alone, unescorted for the first time.     It was an over-night journey by train to a distant place."
 5983---anger---"I was not given a chance to explain to my close relatives as to why I could not go to visit them when they were ill.  When I did go, they thought that I had been selfish and irresponsible duringtheir illness."
@@ -6013,11 +5948,9 @@
 6007---shame---"When my co-resident opened the bathroom door while I was bathing inside."
 6008---guilt---When I could not complete my assignment on time.
 6009---joy---"At the pre-university, I was appreciated as an examplary student by our pricipal.  This is something which made me feel very happy."
-6010---fear---[ No response.]
 6011---anger---"When I was blamed for some of my attributes which are very often misunderstood, especially when one is very frank."
 6012---sadness---"When my sister lost her only son, who was sixteen years old.  I felt very bad about it as this was the first death in my family and then I learned slowly to understand to life."
 6013---disgust---"When I was in a Christian institution, sometimes the nuns would send back the people who came to visit us when it was not the visiting hours.  This disgusted me."
-6014---shame---[ No response.]
 6015---guilt---"Once I was not able to give a relative, who was in a critical period, a helping hand.  Whenever I think about it I feel guilty  for letting down the person who trusted me to give him a helping hand."
 6016---joy---"The day I got a letter from the U.G.C informing me that I had been awarded the junior research fellowship."
 6017---fear---"When I was working in Delhi, I had gone alone to see the hostel where I would be residing."
@@ -6060,7 +5993,6 @@
 6054---sadness---"I have once been very sad and lonely.  This was when I was trying to organize a play as a student (15 years).  Instead of materializing, it fizzled out.  The worst thing was that the play fell apart completely and I found myself weeping uncontrollably.  Now when I think of it, I laugh it off; but at that time it was intense."
 6055---disgust---"This is an incident that many of us witness in our everyday life in a city like Bombay.  One day I was travelling by bus, three men dragged two fellows out of the bus.  Once outside they were beaten into pulp.  These two fellows, who got beaten, were pick-pockets and they were being beaten by all and sundry.  I thought to myself -""what is life?"".  It is one hell of a place where everyone is after someone else.  One waits to cut the throat of the other one just for a living, (money).  When I think about such things - the purpose of life, etc, I feel very disgusted and dejected."
 6056---shame---"This is an event I will never forget.  I am considered a good mimic.  This particular day we were waiting for a professor to take her class.  This  professor had a peculiar accent and a very horrible way of lecturing and to top it all we had this class at the fag end of the day.  So this particular day I got into my element and started imitating the professor, and the professor entered the class right in the middle of it .  I was unaware of her presence, some of my friends tried to warn me but it was of no avail as I was too engrossed in mimicing.  Then I suddenly noticed the silence and turned around to see her entering the class.  I do not know till today if she actually saw what I had been doing or she had completely ignored it.  Through  out that lecture I died of shame.  All the more shameful was the fact that she gave me a character certificate. "
-6057---guilt---[ No response.]
 6058---joy---"This happened when it was finally confirmed that I had stood first in the university for the M.A exams.  A few days before the official results were declared a clerk had brought the results unofficially.  So I had been expecting the results but the confirmation allowed me to legitimately feel happy at my success. "
 6059---fear---"This was when I was being followed home every day from the campus, by a stranger.  He would follow me to the campus and then sit outside my class.  If I was not there he would ask my friends as to where I was.  He was a dark, ominous looking person and I was terrified of him as I did not know his intentions.  I reported him to the security officer, who turned him over to the police.  I was even more petrified then."
 6060---anger---"A new gas connection was to be installed and the mechanic who came to do it was very rude to my mother and me.  I rushed to thhe dealer with my mother and had a fight with the dealer as he seemed to be unreasonable and was taking the mechanic's side.  Ultimately the matter was resolved after my father went and spoke to him.  The mechanic was asked to apologize."
@@ -6072,8 +6004,6 @@
 6066---fear---"When I had gone to a school picnic and was left behind in the forest."
 6067---anger---"When I saw a few people beating a man who seemed to be a stranger."
 6068---sadness---When India lost the Benson and Hedges cricket trophy.
-6069---disgust---[ No response.]
-6070---shame---[ No response.]
 6071---guilt---"When I was responsible for getting my friend run-out in a vital cricket match."
 6072---joy---"When India won the Prudential cup by beating West-Indies in the final match and became the world cricket champion.  West-Indies was the strongest of the eight countries which participated in the competition."
 6073---fear---"As a child, one evening I had read a novel about ghosts and I had thus spent a sleepless night as I kept feeling that there were ghosts dancing around me."
@@ -6115,8 +6045,6 @@
 6109---anger---"I was travelling from Delhi to Bombay.  I had booked a seat one month back and I had also got a telegram confirming this.  However, in the train my name had been omitted from the reservation sheet, and the one seat that was still vacant was alloted to another person who paid for it despite my requests for the seat.  I was allowed to stay in the reserved compartment when I paid money."
 6110---sadness---"The news of the natural calamity, an earthquake in which hundreds  of Mexican people died."
 6111---disgust---"In Punjab, when in the name of religion people killed each other during the agitation."
-6112---shame---[ No response.]
-6113---guilt---[ No response.]
 6114---joy---"I felt happy at the end of a 10 day student camp.  We had shared our hopes and aspirations and in the open situation so generated, we had made strong frienships and experienced our own worth as well.  "
 6115---fear---"One of my fellow students had bunked field work and in my attempt to cover up for him I myself was exposed, though not directly.  We were to meet our field work suprevisor and we were afraid of the consequences."
 6116---anger---"I had made an error in planning a programme and had publicly accepted the mistake, despite repeated requests not to bring the matter for discussion a professor kept constantly passing remarks. I reacted angrily. "
@@ -6163,7 +6091,6 @@
 6157---fear---"My illness a few years back.  I was sevely down with malaria and asthma, I had lost my health, charm and cheerfulness completely."
 6158---anger---During the short period of my unemployment about six years back.
 6159---sadness---"My father's death in January 1983 moved me deeply.  The gloom prevailed for almost two years and I am still to recover from it."
-6160---disgust---[ No response.]
 6161---shame---"When I was 12 years old I was caught by the Ticket Collector when travelling without a ticket."
 6162---guilt---"A few lies that I had indulged in, a few years ago, while raising loans from my friends."
 6163---joy---"After having finished my B.Sc, I was struggling hard to continue my studies and had taken the M.SC exam.  I was not sure that I would be selected in the written exam.  When I saw my name in the selected candidates list I was overjoyed."
@@ -6176,10 +6103,8 @@
 6170---joy---"I was doing an experiment and was not getting the appropriate result despite the fact that I had repeated the procedure 4-5 times.  Then finally I got it right by a stroke of luck."
 6171---fear---"Once I was very frightened at night as I had a very fearful and terrifying dream, I could not go back to sleep for a long time."
 6172---anger---"Once I had an argument with my friends and I knew that I was right.  My friends went on arguing with me even though they did not know the right thing."
-6173---sadness---[ No response.]
 6174---disgust---"My elder sister forced me to do a few things which I did not like to do."
 6175---shame---"Once I had torn a few pages off a library book and I felt ashamed at this."
-6176---guilt---[ No response.]
 6177---joy---When I realized that I loved someone of the opposite sex.
 6178---fear---"After I was thrown out of a car in an accident, this resulted in a fracture."
 6179---anger---"[ During my childhood when I could not get what I wanted from my brother/sister and parents.]"
@@ -6281,7 +6206,6 @@
 6275---fear---"I was very scared at the time of the Ty.B.Sc examination as I had decided to get 1st class results.  I was afraid thinking of how the papers would be."
 6276---anger---"When my neighbours accused my brother of stealing their rose-bush, I was very angry as he had not touched it at all."
 6277---sadness---"When I heard that my girlfriend was getting married to another person, I felt very sad.  That day I did not eat anything and kept thinking of her all day long."
-6278---disgust---[ No response.]
 6279---shame---"When I had insulted my father two years back, at that time I was very angry due to some reasons."
 6280---guilt---"I felt very guilty when I tried to teach swimming to my younger brother, as I myself could not swim very well and my brother had started sinking to the bottom, however my elder brother saved him."
 6281---joy---"This happened a year when I was having a hard time, I got admission to do research despite obstacles in the procedure of admission."
@@ -6329,7 +6253,6 @@
 6323---joy---"I have a girlfriend, who is almost like a daughter to me.  She is studying out of station and I get to see her only once a year.  Her arrival is always a joyous one."
 6324---fear---"While I was pushing a court roller out of a ditch, I slipped and fell down and the roller rolled back towards me -down slope-It is a miracle that I still have my legs intact."
 6325---anger---"I was the compere at a party and all my efforts to get the show rolling were thwarted by the immobile, non co-operative guests.  I felt frustation - bordering on anger."
-6326---sadness---[ No response.]
 6327---disgust---"A railways officer, when asked by the ticket checker to produce his tickets, got very aggressive and started abusing and using his authority in a very wrong way."
 6328---shame---"[ I am quite shameless, not applicable.]"
 6329---guilt---[ Not applicable.]
@@ -6338,8 +6261,6 @@
 6332---anger---"[ When bad and disgusting language is uttered by people, or when someone tries to show what is beyond his own capacities.]"
 6333---sadness---"[ I missed my twin when I was on the verge of being thrown, which I disliked.]"
 6334---disgust---"When Kanishka was blown up, I really felt disgusted at people killing each other."
-6335---shame---[ No response.]
-6336---guilt---[ No response.]
 6337---joy---"When I received the best actor award at the inter-college drama competition.  It gave me tremendous joy and satisfaction which lasted for several days."
 6338---fear---"When my mother met with a serious accident and there was danger that she would not survive and if she did she would loose her memory."
 6339---anger---"When an acquaintance of mine beat up another person for no just reason, and thus showed off his power."
@@ -7342,15 +7263,9 @@
 7336---disgust---"During the Chinese lessons a student often showed off. Moreover he misbehaved and dressed very badly.  So disgusting !"
 7337---shame---"I saw a bag on the street and just then a stranger passed by.  I picked up the bag immediately and gave it to the stranger as I thought that it belonged to him.  But it was not his bag and I felt ashamed."
 7338---guilt---I refused to lend my homework to a friend.
-7339---joy---[ No response.]
 7340---fear---"Once, before I had learnt to swim, I stepped on a slippery slope where there was a lot of moss and I slipped into the water.  The water was very deep and I could not stand on my feet.  I sank and had to use a lot of energy."
-7341---anger---[ No response.]
-7342---sadness---[ No response.]
 7343---disgust---"One day when I was sitting in a not very crowded bus, a middle  aged woman was standing beside me.  The person sitting next to me got up to get off and this woman pushed me and occupied the seat.  Then she took off her shoes and put her feet on the seat."
-7344---shame---[ No response.]
-7345---joy---[ No response.]
 7346---fear---When I saw a horrible movie - Alien.
-7347---anger---[ No response.]
 7348---sadness---"In 1983, my results at the university entrance exam were very poor - far from what I had expected.   I thought that I would not be accepted at the university."
 7349---disgust---"I am disgusted by people who spoil their identity because of misbehaviour.  This morning when I was in a crowded bus, I found a seat on which a university student was sitting on one side and he had put his bag and files next to him.  There was very little space left and I sat down while he kept on reading.  Even when I leaned on him he did not put his bag away.  He did not respond and I felt very angry."
 7350---shame---"During a lecture six students (including me) were asked to leave the class as we had not prepared for the lesson.  I felt ashamed and angry."
@@ -7392,7 +7307,6 @@
 7386---guilt---"One day while we were strolling along the road one of my friends suggested that we go and watch a blue film.  I was curious so I went along but I felt quite guilty later."
 7387---joy---"The day the results of the university entrance exam was published, I found my canditate number and I was very excited."
 7388---fear---"One night we were having a barbecue on the beach and I needed to go to my car, which was far away from the beach.  It was very dark as there were no street lamps.  I ran in the dark, very scared, I ran as fast as possible."
-7389---anger---[ No response.]
 7390---sadness---"I separated with the one I liked most.  She refused all my dates and told me that she had dated another one.  My heart seemed to cease beating.  I was silent for some time and then I whispered goodbye and left without turning back."
 7391---disgust---"When I was a teacher in an evening school, a girl raised a lot of questions and expressed her opinions.  She, very often, took a stand which was different from mine and she thought that it was better than mine.  Her opinions were helpful academically, but  she did not take into consideration my position in public.  Also she seemed to be very talkative and so she disgusted me."
 7392---shame---"I had lunch in a restaurant with a friend and I paid the bill.  The change was that of a two dollar and a ten cent coin.  As I was talking with my friend I took the two dollar coin and forgot to leave a tip."
@@ -7559,9 +7473,7 @@
 7553---shame---My guilty behaviour was found out by others.
 7554---guilt---When my behaviour was immoral - thinking about sex.
 7555---joy---"During my Summer vacations I planned a carnival for the community youth center with a few other volunteers.  I was the head of the organizors and we spent over a month planning it.  During this period we got to know and understood each other.  We discovered each others potential and we planned many interesting things for the carnival.  The day of the carnival everything was bright, the programmes went well and the attendants enjoyed it.  I felt extremely excited about it."
-7556---fear---[ No response.]
 7557---anger---"I was a prefect at secondary school.  On the sports day I told others that I would take down the names of the people who misbehaved and after some time I sat down for a brief rest.  Suddenly the head prefect came and scolded me in front of others.  I was very angry as there were other prefects sitting and he picked on me.  I thought that a brief rest was not  serious enough to be blamed."
-7558---sadness--- [ No response.]
 7559---disgust---"I had joined a youth group that observed the affairs of our community and so I had many opportunities to contact the government and the committee members of the district board (a local executive structure).  We always tried to consult and discuss with them, but we found that such people did not understand community affairs and they even dampened our enthusiasm in local affairs.  I did not understand why they had decided to work as community leaders."
 7560---shame---"One day I was the leader of the weekly meeting of the Church fellowship.  That day I had been preparing for the exams and did not estimate the time to travel to the church right and I was twenty minutes late.  As I had not prepared well I led the meeting badly.  I was ashamed of myself.  "
 7561---guilt---"I borrowed my classmate's notebook one week before the examination and I promised to give it back to her in two days time.  I was very busy at that time and forgot many things; as I was not very often at home she could not contact me.  When I started my revision I realized that her notebook had been on my desk for five days.  I contacted her immediately and gave it back to her.  Though she did not say anything I felt very guilty."

@@ -8,7 +8,7 @@ import os
 
 ##Global variables
 datPath = '../data'
-paths = {'stop':datPath+'/stopwords.txt','data':datPath+'/data.txt','cleanData':datPath+'cleanData.txt'}
+paths = {'stop':datPath+'/stopwords.txt','data':datPath+'/data.txt','cleanData':datPath+'/cleanData.txt'}
 #set containing all stop words (words not informative about query)
 stopSet = set()
 #map emotions we are not modelling to ones we are
@@ -167,6 +167,23 @@ def predict(query, emotions):
     args = [(e,sum([x*y for x,y in zip(query,emotions[e])])) for e in emotions]
     return  max(args, key=lambda x:x[1])[0]
 
+def printTestConfMatrix(ctestX,m):
+    #training confusion matrix
+    predY=[]
+    for (i,test) in enumerate(ctestX):
+        print("test %d\r" % (i+1),end='')
+        predY.append(predict(test,m))
+    
+    accuracy = dict(zip(primaryEmotions,[dict(zip(primaryEmotions,[0]*len(primaryEmotions))) for _ in range(len(primaryEmotions))]))
+    for e in zip(predY,ctestY):
+        accuracy[e[1]][e[0]] += 1
+
+    print(accuracy)
+
+    for k in accuracy:
+        print(k,accuracy[k][k]/sum(accuracy[k].values()))
+
+
 if __name__ == "__main__":
     (testX,testY) = init()
     ctestX = removeStopWords(testX)
@@ -176,12 +193,13 @@ if __name__ == "__main__":
             print(line, file=cFile)
     #print(ctestX)
     m = getEmotionClassVectors(ctestX,ctestY)
+    printTestConfMatrix(ctestX,m)
 
     #query
-    query=input("enter query(q to quit)? ")
-    while query not in ['Q','q']:
-        print(predict(query, m))
-        query=input("enter query(q to quit)? ")
+    #query=input("enter query(q to quit)? ")
+    #while query not in ['Q','q']:
+    #    print(predict(query, m))
+    #    query=input("enter query(q to quit)? ")
     #print(m['anger'])
     #docVectors = getDocumentWeightVectors(ctestX)
     #print(len(ctestX))
