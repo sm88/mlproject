@@ -1688,8 +1688,6 @@
 1686---disgust---"A man whom I like, was drunk and tried to molest me."
 1687---shame---"It was the time when everybody spoke about and discussed Hainburg. I was also asked for my opinion. I was ashamed because I had no firm view of the whole thing and therefor was not able to join the conversation."
 1688---guilt---"I was on a concert-tour and therefor seperated from my boy-friend. But I needed warmth which was given by a male member of the orchestra. My feelings towards him were not very deep, but his feelings were. I felt guilty when he said ""I am not a radiator"".
-1688---guilt---
-1688---guilt---"
 1689---joy---"On my 18th birthday I passed the driving-test. I was glad because I had had to study very much, because I had been lucky and because - as a proof that it was really difficult - not everybody had passed the test."
 1690---fear---"At about midnight I had to go by bike through Graz alone. On the whole it was a distance of several kilometers. A car followed me through the streets. Only when I went into a one-way street the car disappeared. The rest of my way home I was very afraid."
 1691---anger---"I had studied for almost one week for my physics-examination. With difficulty I passed the examn. I was angry about the teacher and also about myself because I had not remembered enough during the examn and because the time that I spent studying was wasted."
@@ -1837,7 +1835,6 @@
 1833---disgust---"On my way home in the middle of the night I saw a drunk man and a woman who were quarreling, beating each other, shouting and so on. I felt disgusted especially because they treated each other in such a degrading way."
 1834---shame---"My girl-friend and I live in one flat with another couple. We get along very well and usually we share everything. Once we two were sitting in our room and eating a cake when the others came in."
 1835---guilt---"I was on a visit to friends who have a baby. The baby was crying in another room, but soon it became quieter and it seemed that it would fall asleep. I went into the room where the baby was lying - and it started crying again.
-1835---guilt---"
 1836---joy---"I went to fetch my girl-friend at the station. When the train arrived and I saw her descending and running up to me, I felt glad."
 1837---fear---"When I wanted to go into a house, there was suddenly a big dog standing beside me. It was hardly moving, but I did not know how it would react later on."
 1838---anger---"My father had bought too many goods for his shop, there was not enough space to store them."
@@ -6242,7 +6239,6 @@
 6233---guilt---Not helping other people to do their homework.
 6234---joy---Made a wonderfull new friend.
 6235---fear---"My friend started to misunderstand and hurt me.
-6235---fear---"
 6236---anger---Insulted by disgusting people.
 6237---sadness---My friend was badly hurt.
 6238---disgust---Someone not responding to my criticism.
@@ -6999,7 +6995,6 @@
 6989---sadness---"Finding out that China is poor, so we cannot have good reference books."
 6990---disgust---"Foreign students playing loud music in the night before the biology examn."
 6991---shame---"Finding out that the university police was afraid to stop the foreign students playing loud music (China's shame).
-6991---shame---"
 6992---guilt---Not doing well in the examn.
 6993---joy---Aticle published.
 6994---fear---Earth crake.
@@ -7199,7 +7194,6 @@
 7188---joy---Going to see a good film with my best friend.
 7189---fear---"Suddenly found out that I was the lasr one to leave the anatomy room."
 7190---anger---"Some boys deliberately played tricks on me in the experiments.
-7190---anger---"
 7191---sadness---"Iqam chosen for your lecture and my best friend is not. Now he is angry with me and I cannot help him."
 7192---disgust---Listening to my roommate boasting about her new clothes.
 7193---shame---China not winning more gold medals in the Asian Olympics.
@@ -7251,7 +7245,6 @@
 7239---anger---My best friend betrayed me and told other people my secrets.
 7240---sadness---Disappointed by a friend.
 7241---disgust---"Finding out some people had been talking about me at my back.
-7241---disgust---"
 7242---shame---Being sexually assulted in public.
 7243---guilt---I did not reply to my friend's letter in time. 
 7244---joy---Watching China winning the Asian Olympic games.
