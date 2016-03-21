@@ -10,6 +10,7 @@ an
 and
 any
 are
+arent
 as
 at
 be
@@ -25,10 +26,14 @@ by
 cant
 cannot
 could
+couldnt
 did
+didnt
 do
 does
+doesnt
 doing
+dont
 down
 during
 each
@@ -37,8 +42,11 @@ for
 from
 further
 had
+hadnt
 has
+hasnt
 have
+havent
 having
 he
 hed
@@ -63,6 +71,7 @@ if
 in
 into
 is
+isnt
 it
 its
 its
@@ -71,10 +80,12 @@ lets
 me
 more
 most
+mustnt
 my
 myself
 no
 nor
+not
 of
 off
 on
@@ -96,6 +107,7 @@ shed
 shell
 shes
 should
+shouldnt
 so
 some
 such
@@ -126,12 +138,14 @@ until
 up
 very
 was
+wasnt
 we
 wed
 well
 were
 weve
 were
+werent
 what
 whats
 when
@@ -148,6 +162,7 @@ whys
 with
 wont
 would
+wouldnt
 you
 youd
 youll

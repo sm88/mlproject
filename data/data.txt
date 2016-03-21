@@ -7655,4 +7655,9 @@ anger#Two years back someone invited me to be the tutor of her granddaughter. Th
 sadness#I had taken the responsibility to do something and I had prepared for it. However I failed because of my timidity. After three attempts I still could not adapt to the atmosphere and failed as before. I felt imcompetent and felt that the others would think that I had not prepared for it. 
 disgust#I was at home and I heard a loud sound of spitting outside the door. I thought that one of my family members would step on the spit and bring the germs in the house. 
 shame#I did not do the homework that the teacher had asked us to do. I was scolded immediately. 
-guilt#I had shouted at my younger brother and he was always afraid when I called out loudly. 
+guilt#I had shouted at my younger brother and he was always afraid when I called out loudly.
+anger#I hate everything in the world.
+anger#I hate my teacher as he scolds me unnecessarily.
+sadness#My friend started to hate me when I ratted him out.
+joy#Oh the carefree days of childhood.
+joy#I love playing childrens games.

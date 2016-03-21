@@ -4,10 +4,11 @@ import sys
 import csv
 import pprint as pp
 import math
+import os
 
 ##Global variables
 datPath = '../data'
-paths = {'stop':datPath+'/stopwords.txt','data':datPath+'/data.txt'}
+paths = {'stop':datPath+'/stopwords.txt','data':datPath+'/data.txt','cleanData':datPath+'cleanData.txt'}
 #set containing all stop words (words not informative about query)
 stopSet = set()
 #map emotions we are not modelling to ones we are
@@ -16,10 +17,21 @@ emotionMap = {'joy':'joy', 'fear':'anger', 'anger':'anger', 'disgust':'anger', '
 primaryEmotions = ['joy','anger','sadness']
 #set of all important words
 lexicon = set()
-
+#number of docs for each term
+nks = {}
+#number of documents
+docCnt = 0
+#output
+errout = open(os.devnull,'w')
+#not words
+notSwitch = {'arent':'are not','couldnt':'could not','didnt':'did not','doesnt':'does not','dont':'do not','hadnt':'had not','hasnt':'has not','havent':'have not','isnt':'is not','mustnt':'must not','shouldnt':'should not','wasnt':'was not','werent':'were not','wouldnt':'would not'}
 ################################################################################
 ############################### DATA SPECIFIC FUNCTIONS #######################
 ################################################################################
+
+def cleanData(ls):
+    return ls.strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK')
+
 def init(toLower=True):
     """
     Function to fill up some important global variables.
@@ -34,7 +46,7 @@ def init(toLower=True):
     """ 
 
     global stopSet,paths
-    print("init",file=sys.stderr)
+    print("init",file=errout)
     (testX,testY) = ([],[])
     with open(paths["stop"]) as sFile:
         for line in sFile:
@@ -44,34 +56,38 @@ def init(toLower=True):
         reader = csv.reader(dFile,delimiter='#')
         for row in reader:
             testY.append(row[0])
-            testX.append(row[1].strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK'))
+            testX.append(cleanData(row[1]))
+            #testX.append(row[1].strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK'))
 
     return (testX,testY)
 
 def reduceEmotions(ls):
     global emotionMap
-    print("reduceEmotions",file=sys.stderr)
+    print("reduceEmotions",file=errout)
     ls2 = [emotion for emotion in map(lambda x:emotionMap[x],ls)]
     return ls2
 
-def removeStopWords(ls):
+def removeStopWords(ls,addToLexicon=True):
     """
     Compares each word in data to standard stop word list.
     Also builds the lexicon(set of all words) required for model.
     """
     global stopSet,lexicon
-    print("removeStopWords",file=sys.stderr)
+    print("removeStopWords",file=errout)
     testX = ['']*len(ls)
 
     for i in range(len(ls)):
         validLine = []
+        for k in notSwitch:
+            ls[i] = ls[i].replace(k,notSwitch[k]+" ")
+
+        ls[i] = ls[i].replace(' not ',' not')
         for word in ls[i].split():
             if word not in stopSet:
-                lexicon.add(word.strip("."))
+                if addToLexicon:
+                    lexicon.add(word.strip("."))
                 validLine.append(word.strip("."))
         testX[i] = " ".join(validLine)
-        if testX[i]=="":
-            print(i,"\n",ls[i-1],"\n",ls[i+1])
     return testX
 
 def _debug(ls,onlyLen=True):
@@ -105,27 +121,30 @@ def getTermsFrequencyListInDoc(doc):
         fMap[term] = fMap[term] + 1 if term in fMap else 1
     return fMap
 
-def getDocumentWeightVector(x,nks,cnt):
+def getDocumentWeightVector(x):
+    global nks,docCnt
     weightVec = []
     normFactor = 0.0
     tf = getTermsFrequencyListInDoc(x)
     for word in lexicon:
         if word not in tf:
             weightVec.append(0.0)
-        else:
-            lg = math.log(cnt*1.0/nks[word])
+        elif word in nks:
+            lg = math.log(docCnt*1.0/nks[word])
             weightVec.append(tf[word]*lg)
             normFactor += (tf[word]*lg)**2
     
     return [x/math.sqrt(normFactor) for x in weightVec]
 
 def getDocumentWeightVectors(ctestX):
-    print("getDocumentWeightVectors",file=sys.stderr)
+    global nks,docCnt
+    print("getDocumentWeightVectors",file=errout)
     nks = getDocCountofTerms(ctestX)
-    return [getDocumentWeightVector(x,nks,len(ctestX)) for x in ctestX]
+    docCnt = len(ctestX)
+    return [getDocumentWeightVector(x) for x in ctestX]
 
 def getEmotionClassVectors(ctestX,ctestY):
-    print("getEmotionClassVectors",file=sys.stderr)
+    print("getEmotionClassVectors",file=errout)
     emotionWeightMap = dict(zip(primaryEmotions,[[0.0]*len(lexicon) for _ in range(len(primaryEmotions))]))
     docEmotionCnt = {}
     docVectors = getDocumentWeightVectors(ctestX)
@@ -140,14 +159,29 @@ def getEmotionClassVectors(ctestX,ctestY):
 
 def predict(query, emotions):
     #todo:cleanup test data
-    max([sum([x*y for x in zip(query,emotions[e])]) for e in emotions])
+    query = cleanData(query)
+    query = removeStopWords([query],addToLexicon=False)
+    query = getDocumentWeightVector(query[0])
+    #print(query)
+
+    args = [(e,sum([x*y for x,y in zip(query,emotions[e])])) for e in emotions]
+    return  max(args, key=lambda x:x[1])[0]
 
 if __name__ == "__main__":
     (testX,testY) = init()
     ctestX = removeStopWords(testX)
     ctestY = reduceEmotions(testY)
+    with open(paths['cleanData'],"w") as cFile:
+        for line in ctestX:
+            print(line, file=cFile)
     #print(ctestX)
     m = getEmotionClassVectors(ctestX,ctestY)
+
+    #query
+    query=input("enter query(q to quit)? ")
+    while query not in ['Q','q']:
+        print(predict(query, m))
+        query=input("enter query(q to quit)? ")
     #print(m['anger'])
     #docVectors = getDocumentWeightVectors(ctestX)
     #print(len(ctestX))

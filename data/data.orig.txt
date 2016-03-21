@@ -7656,3 +7656,8 @@
 7650---disgust---"I was at home and I heard a loud sound of spitting outside the door.  I thought that one of my family members would step on the spit and bring the germs in the house."
 7651---shame---"I did not do the homework that the teacher had asked us to do.  I was scolded immediately."
 7652---guilt---"I had shouted at my younger brother and he was always afraid when I called out loudly."
+7653---anger---"I hate everything in the world."
+7654---anger---"I hate my teacher as he scolds me unnecessarily."
+7655---sadness---"My friend started to hate me when I ratted him out."
+7656---joy---"Oh the carefree days of childhood."
+7657---joy---"I love playing childrens games."
