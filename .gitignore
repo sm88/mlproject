@@ -10,3 +10,5 @@
 .fuse*
 *.lof
 *.lot
+*.tex.backup
+*~
