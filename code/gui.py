@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import scrolledtext as st
 from tkinter import ttk
 from tkinter import N,E,W,S,END
-from vsm2 import vsm
+from vsm import vsm
 
 class gui:
     def __init__(self, root):
