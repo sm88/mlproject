@@ -4,25 +4,41 @@ import tkinter as tk
 from tkinter import scrolledtext as st
 from tkinter import ttk
 from tkinter import N,E,W,S,END
+from vsm2 import vsm
 
 class gui:
     def __init__(self, root):
         self.root = root
         self.boxValue = tk.StringVar() 
         self.boxValue.trace("w", self._comboCallback)
-        self._createComponents()
+        self.emoVar = tk.StringVar()
+        self.emoVar.set("Emotion?")
+        self.img = tk.PhotoImage()
+        self.img.configure(file='../images/logo.png')
+
+        self._createComponents()        
+        self.trainClassifiers()
+        
+
+    def trainClassifiers(self):
+        obj = vsm(dat='data.valid.class.txt')
+        obj.fit()
+        self.which = {0:obj}       
+
 
     def _createComponents(self):
         self.root.title('Emotion Classifier')
         self.root.resizable(False, False)
 
-        self.tBox = st.ScrolledText(self.root)
+        self.tBox = st.ScrolledText(self.root,font=("Ubuntu",12))
         self.fQuery = tk.Entry(self.root)
         self.comboBox = ttk.Combobox(self.root, textvariable=self.boxValue, state='readonly')
         self.bClassify = tk.Button(self.root, text="Classify", command=self._clickCallback)
         self.lQuery = tk.Label(self.root, text="Query:")
         self.lClassifier = tk.Label(self.root, text="Classifier:")
         self.bExit = tk.Button(self.root, text="Quit", command = self._quitCallback)
+        self.emo = tk.Label(self.root, font=("Ubuntu", 24), textvariable=self.emoVar, fg="blue")
+        self.smiley = tk.Label(self.root,image=self.img)
 
         self.tBox.grid(row=0, column=0, columnspan=24)
         self.lClassifier.grid(row=1, column=0, sticky=W)
@@ -31,11 +47,13 @@ class gui:
         self.lQuery.grid(row=2, column=0, sticky=W)
         self.fQuery.grid(row=2, column=1, columnspan=22, sticky=W+E+N+S)
         self.bClassify.grid(row=2, column=23, columnspan=1, sticky=W+E)
+        self.emo.grid(row=3,column=0,columnspan=14,sticky=E)
+        self.smiley.grid(row=3,column=15,sticky=E)
         # self.status.grid(row=3, column=0, columnspan=12, sticky=W+E+N+S)
         # self.emotion.grid(row=3,column=12, columnspan=12, sticky=W+E+N+S)
         
         self.tBox.configure(state="disabled")
-        self.comboBox["values"] = ('Naive Bayes', 'SVM', 'VSM')
+        self.comboBox["values"] = ('VSM', 'Naive Bayes', 'SVM')
         self.comboBox.current(0)
 
         self.fQuery.bind('<Return>',self._returnCallback)
@@ -43,8 +61,12 @@ class gui:
     def _clickCallback(self):
         if self.fQuery.get():
             msg = self.fQuery.get()
+            classifier = self.comboBox["values"].index(self.boxValue.get())
+            emo = self.which[classifier].predict(msg)
+            msg = msg+' [['+emo+']] '
+            self.emoVar.set(emo)
+            self.img.configure(file="../images/"+emo+".png")
             self.tBox.configure(state="normal")
-            #add prediction code here
             self.tBox.insert(END, "Text: "+msg+"\n")
             self.tBox.configure(state="disabled")
             self.fQuery.delete(0,len(msg))
