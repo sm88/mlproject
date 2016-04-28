@@ -5,7 +5,7 @@ import pprint as pp
 import math
 import os
 import numpy as np
-from sklearn.naive_bayes import GaussianNB
+from sklearn import svm
 from sklearn.metrics import f1_score
 
 ##Global variables
@@ -26,7 +26,7 @@ docCnt = 0
 #output
 errout = open(os.devnull,'w')
 #Gaussian Naive Bayes Classifier
-clf = GaussianNB()
+clf = svm.LinearSVC()
 #not words
 notSwitch = {'arent':'are not','couldnt':'could not','didnt':'did not','doesnt':'does not','dont':'do not','hadnt':'had not','hasnt':'has not','havent':'have not','isnt':'is not','mustnt':'must not','shouldnt':'should not','wasnt':'was not','werent':'were not','wouldnt':'would not'}
 ################################################################################
@@ -181,23 +181,23 @@ def predict(query):
 
 
 def predictTraining(docVectors,ctestY):
-    gauPred=[]
+    svmPred=[]
     docVectorsArray=np.asarray(docVectors)
     ctestYArray=np.asarray(ctestY)
     #clf = GaussianNB()
     clf.fit(docVectorsArray,ctestYArray)
     for i in range(len(docVectorsArray)):
-        gauPred.append(clf.predict(docVectorsArray[i].reshape(1,-1)))
-    gPred=[item for sublist in gauPred for item in sublist] 
+        svmPred.append(clf.predict(docVectorsArray[i].reshape(1,-1)))
+    sPred=[item for sublist in svmPred for item in sublist] 
     accuracy = dict(zip(primaryEmotions,[dict(zip(primaryEmotions,[0]*len(primaryEmotions))) for _ in range(len(primaryEmotions))]))
-    for e in zip(gPred,ctestY):
+    for e in zip(sPred,ctestY):
         accuracy[e[1]][e[0]] += 1
 
     print(accuracy)
     for k in accuracy:
         print(k,accuracy[k][k]/sum(accuracy[k].values()))
-    print("F1 score of Gaussian Naive Bayes")
-    print(f1_score(ctestY,gPred,average='macro'))
+    print("F1 score of SVM")
+    print(f1_score(ctestY,sPred,average='macro'))
 
 if __name__ == "__main__":
     (testX,testY) = init()
@@ -208,13 +208,12 @@ if __name__ == "__main__":
             print(line, file=cFile)
     docVectors = fit(ctestX,ctestY)
     #predictTraining(docVectors,ctestY)
-    
+   
     #fo = open("../data/test.txt","r")
-    #fout = open("../data/test_nb.txt","a")
+    #fout = open("../data/test_svm.txt","a")
     #for line in fo:
         #print(predict(line))
     #    fout.write(str(predict(line))+" "+line)
-
     #query
     query=input("enter query(q to quit)? ")
     while query not in ['Q','q']:
@@ -225,6 +224,6 @@ if __name__ == "__main__":
     #print(len(ctestX))
     #print(nks)
     #_debug(zip(testX,ctestX),onlyLen = False)
-
-
+    fo.close()
+    fout.close()
 
