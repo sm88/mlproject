@@ -1,5 +1,4 @@
 #! /usr/bin/env python3
-import pickle
 import sys
 import csv
 import pprint as pp
@@ -180,6 +179,7 @@ class vsm:
             print(k,accuracy[k][k]/sum(accuracy[k].values()))
 
     def fit(self, verbose=False):
+        print("training vsm...")
         (testX,testY) = self.init()
         ctestX = self.removeStopWords(testX)
         ctestY = self.reduceEmotions(testY)
@@ -195,23 +195,7 @@ class vsm:
 if __name__ == "__main__":
     obj = vsm(verbose=True)
     obj.fit(verbose=False)
-    # (testX,testY) = init()
-    # ctestX = removeStopWords(testX)
-    # ctestY = reduceEmotions(testY)
-    # with open(paths['cleanData'],"w") as cFile:
-    #     for line in ctestX:
-    #         print(line, file=cFile)
-    # #print(ctestX)
-    # m = getEmotionClassVectors(ctestX,ctestY)
-    # printTestConfMatrix(ctestX,m)
-
-    # #query
-    # #query=input("enter query(q to quit)? ")
-    # #while query not in ['Q','q']:
-    # #    print(predict(query, m))
-    # #    query=input("enter query(q to quit)? ")
-    # #print(m['anger'])
-    # #docVectors = getDocumentWeightVectors(ctestX)
-    # #print(len(ctestX))
-    # #print(nks)
-    # #_debug(zip(testX,ctestX),onlyLen = False)
+    query=input("enter query(q to quit)? ")
+    while query not in ['Q','q']:
+        print(obj.predict(query))
+        query=input("enter query(q to quit)? ")
