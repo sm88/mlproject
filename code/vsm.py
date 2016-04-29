@@ -43,10 +43,12 @@ class vsm:
         """
         query = self.tf.cleanData(query)
         query = self.tf.removeStopWords([query],addToLexicon=False)
+        print(query)
         query = self.tf.getDocumentWeightVector(query[0])
         #print(query)
 
         args = [(e,sum([x*y for x,y in zip(query,self.classWts[e])])) for e in self.classWts]
+        print(args)
         return  max(args, key=lambda x:x[1])[0]
 
     def printTestConfMatrix(self, ctestX, ctestY):

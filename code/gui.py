@@ -33,11 +33,10 @@ class gui:
         arguments: none
         return: none
         """
-        modVSM, modNB, modSVM = vsm(), nb(), svm()
-        modVSM.fit()
-        modNB.fit()
-        modSVM.fit()
-        self.which = {0:modVSM,1:modNB,2:modSVM}
+        
+        self.which = {0:vsm(),1:nb(),2:svm()}
+        for i in self.which.keys():
+            self.which[i].fit()
 
 
     def _createComponents(self):
