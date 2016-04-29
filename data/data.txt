@@ -7565,3 +7565,5 @@ sadness#My friend started to hate me when I ratted him out.
 joy#Oh the carefree days of childhood. 
 joy#I love playing childrens games.
 sadness#He is not happy with his life.
+joy#He likes to travel wherever it might be.
+joy#He like to travel to far away places.
