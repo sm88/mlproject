@@ -1,0 +1,120 @@
+%\chapter{Submission 1 ($12^{th} March)$}
+\chapter{}
+\section{Project Description}
+\subsection{Problem Statement}
+Detecting emotional state of a person by analyzing a text document
+written by him appear challenging but it is also essential many times due to its various application area. Recognizing the emotion of the text plays a key role in 
+the human-computer interaction. Emotions may be expressed by a person's speech, 
+face  expression  and  written  text  known  as  speech,  facial  and  text  based  emotion 
+respectively. Athough sufficient amount of work has been done by researchers to detect emotion from facial and 
+speech information but recognizing  emotions  from  textual  data  is still a fresh and hot 
+research area. In this project, we have addressed the problem of emotion detection on the basis of text data only.
+\subsection{Why is it interesting}
+\begin{itemize}
+\item Psychologists can better assist their patients by analyzing their session transcripts for any subtle emotions.
+\item Reliable emotion detection can help develop powerful human-computer interaction devices. For example,a computer can analysis the emotion during a text chat session and according display proper emoticons or a computer can read a movie review and then analyze the sentiment of the reviewer.
+\item Deep  emotional  analysis  of  public  data such  as  tweets  and  blogs  could  reveal  interesting  insights into human nature and behavior
+\end{itemize}
+
+Consider the following scenarios:
+
+\begin{table}[ht!]
+\centering
+\label{tab-some-examples}
+\begin{tabular}{l|c}
+\textbf{Sentence} & \textbf{Emotion} \\
+\hline
+$\bullet$A close person lied to me & Sadness \\
+$\bullet$A colleague asked me for some advice and & \\
+as he did not have enough confidence in me & \\
+he asked a third person. & Sadness \\
+$\bullet$I got a present today. & Joy
+\end{tabular}
+\caption{Some examples}
+\end{table}
+
+%\begin{comment}
+%\subsection{Basic Details}
+%\label{subsec-basic-details}
+%\begin{itemize}
+%\item We wish to implement a system capable of predicting the emotion portrayed, given a sentence. The predicted classes will be limited to %%%\textbf{anger, joy and sadness}.
+%\item The project is inspired from the paper mentioned in section \ref{sec-feasibility}.
+%\item The paper details the use of \textbf{Vector Space Models} (VSM) to implement the solution.
+%\item We will be using our dataset, comprising sentences annotated with emotions to train the model. The trained model will then be presented %with the test data in form of a vector and the most probable emotion will be displayed as output.
+%\item Later, if time permits, we will implement some form of application to showcase the prowess of our project.
+%\end{itemize}
+%\end{comment}
+
+\newpage
+\section{Papers}
+The paper implemented is mentioned in \ref{sec-feasibility}.
+
+\section{Dataset}
+The dataset used is mentioned in \ref{sec-dataset}. The dataset has around 7500 sentences. We will use 2/$3^{rd}$ of the dataset for training and cross validation and the rest for testing.
+
+\section{Different Methods Applied to this problem}
+\subsection{Vector Space Model}
+\begin{itemize}
+\item As mentioned in section \ref{subsec-basic-details}, in line with the paper, we will be using VSM for out initial implementation.
+\item Put simply, we will have representative vectors for each of our emotion classes, \textbf{joy, anger and sadness}. Then we will transform our input sentence in the same way we found our representative vectors and find the cosine similarity with each of them.
+\item These similarities will be used to calculate probabilities of the input being in some emotion class and the most probable class will be output.
+\item The vectors will comprise of weights in terms of \textbf{tf-idf} frequencies. We could simply use word frequency instead but:
+	\begin{itemize}
+		\item \textbf{tf-idf} was chosen to provide weights as some words occur sparsely in the document, but provide definitive information about the emotion being portrayed. For example, the word \emph{devil} occurring in a sentence tips the scale towards negative emotion.
+		\item Had we chosen only frequencies, this could pollute the result.
+		\item Similarly, some words occur very frequently like \emph{cat}, but do not provide much information. Frequentistically speaking these words will get higher weight.
+		\item \textbf{tf-idf} balances these disparities by multiplying the term frequency with inverse document frequency. The latter meaning the ratio of total number of documents and the number of documents containing that term.
+		\item For low frequency words, the \textbf{idf} will be high and vice-versa.
+	\end{itemize}
+\end{itemize}
+\textbf{High level algorithm}
+\label{subsec-high-level-alg}
+\textbf{Training}
+\begin{itemize}
+\item The training set is cleaned, in that:
+	\begin{itemize}
+	\item Stop words are removed, after comparing with standard stop word lists.
+	\item Apostrophes are expanded.
+	\item Words are reduced to their root using some stemming technique.
+	\end{itemize}
+\item We build a lexicon from 2/3$^{rd}$ of the above cleaned data.
+\item Each term in the vector corresponds to a term in our lexicon. The lexicon is an ordered set of all words in the cleaned dataset.
+\item We build document vectors using weights assigned to each term. These weights are calculated using the \textbf{tf-idf} technique. These weights are further normalized.
+$$
+w_{ki}=c(t_k,d_i)=\frac{tf_{ik}log(N/n_k)}{\sqrt{\sum_{k=1}^{n} (tf_{ik})^{2}[log(N/n_k)]^2}}
+$$
+where, \\
+$t_k$ = $k^{th}$ term in document $d_i$ \\
+$tf_{ik}$ = frequency of the word $t_k$ in document $d_i$ \\
+$idf_k$ = log($\frac{N}{n_k}$), inverse document frequency of word $t_k$ in  entire dataset. \\
+$n_k$ = number of documents with word $t_k$. \\
+$N$ = total number of documents in the dataset.
+\item Now each emotion class is a set of the corresponding vectors, calculated as above. We then find the mean of all these vectors to find a representative vector of the said class.
+\item Finally, we'll get $s$ vectors corresponding to the distinct emotion classes.
+\end{itemize}
+\textbf{Testing}
+\begin{itemize}
+\item Each input sentence is cleaned, and transformed into a vector with weights calculated using \textbf{tf-idf} technique.
+\item The similarity is calculated as:
+$$
+\mbox{sim}(Q,E_j) = \sum_{k=1}^{n} w_{kq}*E_{kj}
+$$
+where,\\
+$Q$ is query vector, \\
+$E_j$ is an emotion vector.
+\item Answer is calculated as:
+$$
+\mbox{VSM}(Q) = \mbox{argmax}_{j} (\mbox{sim}(Q, E_j))
+$$
+\end{itemize}
+
+\subsection{Support Vector Machine}
+Quite similar to the above approach, this class also composes tfidfhelper.py. There is no need here to build emotion class wei
+ght vectors, hence that method is not used. However, "fit" and "predict" are present and work exactly the same way. We have directly used Linea
+rSVC from sklean API and tuned the parameters.
+
+\subsection{Gaussian Naive Bayes}
+Since text classification is a popular application of naive baye's algorithm, we used it for our predictions too. However, our 
+data is continuous (tf-idf) so we have used Gaussian Naive Baye's to classify the text. Again as in case of svm we have similar API and used Ga
+ussianNB from sklearn libraries.
+
