@@ -6,6 +6,7 @@ import math
 import os
 import numpy as np
 from sklearn import svm as sv
+from sklearn import grid_search
 from sklearn.metrics import f1_score
 from tfidfhelper import tfidfhelper
 
@@ -16,8 +17,10 @@ class svm:
         arguments: verbose-print extra info?, dat-specify training data file
         return: none
         """
+        parameters = {'kernel':('linear'), 'C':[0.1,0.2,0.4,0.6,0.8]}
         self.tf = tfidfhelper()
-        self.clf = sv.LinearSVC()
+        self.svmc = sv.SVC()
+        self.clf = grid_search.GridSearchCV(self.svmc, parameters,verbose=4)
 
     def fit(self):
         """
