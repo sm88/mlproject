@@ -11,10 +11,23 @@ from tfidfhelper import tfidfhelper
 
 class svm:
     def __init__(self, verbose=False, dat='data.txt'):
+        """Constructor creates the helper object to be used throughout the model
+        and initialize the SVM model from sklearn.
+        arguments: verbose-print extra info?, dat-specify training data file
+        return: none
+        """
         self.tf = tfidfhelper()
         self.clf = sv.LinearSVC()
 
     def fit(self):
+        """
+        Function to fit the model to the training data. Performs 3 steps:
+        -clean the data i.e. remove stop words etc,
+        -print cleaned data to a file
+        -compute the emotion class weights
+        arguments: verbose - print extra info
+        return: none
+        """
         print("training svm...")
         (testX,testY) = self.tf.init()
         ctestX = self.tf.removeStopWords(testX)
@@ -30,13 +43,16 @@ class svm:
         self.clf.fit(docVectorsArray,ctestYArray)
 
     def predict(self, query):
-        #todo:cleanup test data
+        """
+        Simple function that cleans data, and queries the model for a prediction.
+        The predicted emotion is returned to the caller.
+        arguments: query - a sentence (document)
+        return: predicted emotion
+        """
         query = self.tf.cleanData(query)
         query = self.tf.removeStopWords([query],addToLexicon=False)
         query = self.tf.getDocumentWeightVector(query[0])
-        #print(query)
-
-        #args = [(e,sum([x*y for x,y in zip(query,emotions[e])])) for e in emotions]
+        
         return self.clf.predict((np.asarray(query)).reshape(1,-1))[0]
 
 if __name__ == "__main__":

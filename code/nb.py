@@ -11,10 +11,23 @@ from tfidfhelper import tfidfhelper
 
 class nb:
     def __init__(self, verbose=False, dat='data.txt'):
+        """Constructor creates the helper object to be used throughout the model
+        and initialize the GNB model from sklearn.
+        arguments: verbose-print extra info?, dat-specify training data file
+        return: none
+        """
         self.tf = tfidfhelper()
         self.clf = GaussianNB()        
 
     def fit(self, verbose=False):
+        """
+        Function to fit the model to the training data. Performs 3 steps:
+        -clean the data i.e. remove stop words etc,
+        -print cleaned data to a file
+        -compute the emotion class weights
+        arguments: verbose - print extra info
+        return: none
+        """
         print("training nb...")
         (testX,testY) = self.tf.init()
         ctestX = self.tf.removeStopWords(testX)
@@ -30,7 +43,12 @@ class nb:
         self.clf.fit(docVectorsArray,ctestYArray)
 
     def predict(self, query):
-        #todo:cleanup test data
+        """
+        Simple function that cleans data, and queries the model for a prediction.
+        The predicted emotion is returned to the caller.
+        arguments: query - a sentence (document)
+        return: predicted emotion
+        """
         query = self.tf.cleanData(query)
         query = self.tf.removeStopWords([query],addToLexicon=False)
         query = self.tf.getDocumentWeightVector(query[0])
@@ -45,10 +63,3 @@ if __name__ == "__main__":
     while query not in ['Q','q']:
         print(obj.predict(query))
         query=input("enter query(q to quit)? ")
-    # (testX,testY) = init()
-    # ctestX = removeStopWords(testX)
-    # ctestY = reduceEmotions(testY)
-    # with open(paths['cleanData'],"w") as cFile:
-    #     for line in ctestX:
-    #         print(line, file=cFile)
-    # docVectors = fit(ctestX,ctestY)

@@ -27,6 +27,12 @@ class gui:
         
 
     def trainClassifiers(self):
+        """
+        Function pre creates objects for all classifiers, so that prediction is fast.
+        An instance dict of those models is created so that they can be indexed easily.
+        arguments: none
+        return: none
+        """
         modVSM, modNB, modSVM = vsm(), nb(), svm()
         modVSM.fit()
         modNB.fit()
@@ -35,6 +41,11 @@ class gui:
 
 
     def _createComponents(self):
+        """
+        Create and initialize all gui components.
+        arguments: none
+        return: none
+        """
         self.root.title('Emotion Classifier')
         self.root.resizable(False, False)
 
@@ -74,6 +85,11 @@ class gui:
         self.tBox.tag_configure("sadness", foreground="gray")
 
     def _clickCallback(self):
+        """
+        Callback function to update gui when the a query has been entered
+        arguments: none
+        return: none
+        """
         if self.fQuery.get():
             msg = self.fQuery.get()
             classifier = self.comboBox["values"].index(self.boxValue.get())
@@ -87,19 +103,39 @@ class gui:
             self.fQuery.delete(0,len(msg))
 
     def _quitCallback(self):
+        """
+        Callback to quit application
+        arguments: none
+        return: none
+        """
         print('exiting...')
         self.root.destroy()
         sys.exit(0)
 
     def _returnCallback(self, event):
+        """
+        Callback to handle <enter> action on textfield
+        arguments: triggering event
+        return: none
+        """
         self._clickCallback()
 
     def _comboCallback(self, *args):
+        """
+        Callback to change classifier label, when new one selected from the combobox
+        arguments: list of values in combobox
+        return: none
+        """
         #set new classifier here
         self.classVar.set(self.boxValue.get())
         print(self.comboBox["values"].index(self.boxValue.get()))
 
     def run(self):
+        """
+        Function to start main loop of application
+        argument: none
+        return: none
+        """
         self.root.mainloop()
 
 if __name__ == "__main__":

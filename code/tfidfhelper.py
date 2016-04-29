@@ -8,6 +8,11 @@ import os
 
 class tfidfhelper:
     def __init__(self, verbose=False, dat='data.txt'):
+        """
+        Constructor initializing some important variables, used throughout.
+        arguments: verbose-should extra info be printed, dat=specify alternate training file
+        return: none
+        """
         self.datPath = '../data'
         self.paths = {'stop':self.datPath+'/stopwords.txt','data':self.datPath+'/'+dat,'cleanData':self.datPath+'/cleanData.txt'}
         #set containing all stop words (words not informative about query)
@@ -30,9 +35,19 @@ class tfidfhelper:
         self.doNotConsider = set(['guilty', 'fear'])
 
     def cleanData(self, ls):
+        """
+        Function does basic housekeeping and converts important punctuations to words, so
+        that they don't end up being removed due to the stop word list removal.
+        arguments: ls-data to clean
+        return: cleaned data
+        """
         return ls.strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK')
 
     def reduceEmotions(self, ls):
+        """Function to convert the index based outputs to meaningfull strings. Eg 1->"anger"
+        arguments: ls-list of index based emotions
+        return: list of emotion strings
+        """
         print("reduceEmotions",file=self.errout)
         ls2 = [emotion for emotion in map(lambda x:self.emotionMap[x],ls)]
         return ls2
@@ -62,7 +77,6 @@ class tfidfhelper:
                     continue
                 testY.append(row[0])
                 testX.append(self.cleanData(row[1]))
-                #testX.append(row[1].strip().lower().replace('?',' XXQMARKXX').replace('!',' XXEXMARK'))
 
         return (testX,testY)
 
@@ -70,6 +84,8 @@ class tfidfhelper:
         """
         Compares each word in data to standard stop word list.
         Also builds the lexicon(set of all words) required for model.
+        arguments: ls-data to be cleansed
+        return: cleansed data
         """
         #print("removeStopWords",file=self.errout)
         testX = ['']*len(ls)
@@ -89,6 +105,11 @@ class tfidfhelper:
         return testX
 
     def _debug(self, ls,onlyLen=True):
+        """
+        Testing function, used to print vectors of data
+        arguments: ls-data
+        return: none
+        """
         for row in ls:
             if onlyLen:
                 for item in row:
@@ -105,6 +126,8 @@ class tfidfhelper:
     def getDocCountofTerms(self, testX):
         """
         Function to return list of counts of documents containing a term for each term in the lexicon.
+        arguments: testX - test data
+        return: nks - word frequency in entire dataset
         """
         nks = {}
         for doc in testX:
@@ -113,6 +136,10 @@ class tfidfhelper:
         return nks
 
     def getTermsFrequencyListInDoc(self, doc):
+        """Function returning frequency of all words in a single sentence (document)
+        arguments: doc - the sentence
+        return: fMap - dict of term freq
+        """
         fMap = {}
         doc = doc.split()
         for term in doc:
@@ -120,6 +147,12 @@ class tfidfhelper:
         return fMap
 
     def getDocumentWeightVector(self, x):
+        """
+        Function to create vector of the size of the lexicon populated with weights corresponding
+        to the terms in the document.
+        arguments: x-a single sentence
+        return:weight vector
+        """
         weightVec = []
         normFactor = 10.0
         tf = self.getTermsFrequencyListInDoc(x)
@@ -134,6 +167,11 @@ class tfidfhelper:
         return [x/math.sqrt(normFactor) for x in weightVec]
 
     def getDocumentWeightVectors(self, ctestX):
+        """
+        Function returning all document weight vectors in the entire dataset
+        arguments: ctestX - cleaned dataset
+        return: none
+        """
         print("getDocumentWeightVectors",file=self.errout)
         self.nks = self.getDocCountofTerms(ctestX)
         self.docCnt = len(ctestX)

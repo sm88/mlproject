@@ -8,24 +8,39 @@ from tfidfhelper import tfidfhelper
 
 class vsm:
     def __init__(self, verbose=False, dat='data.txt'):
-        self.tf = tfidfhelper()        
+        """Constructor creates the helper object to be used throughout the model
+        arguments: verbose-print extra info?, dat-specify training data file
+        return: none
+        """
+        self.tf = tfidfhelper(dat=dat)        
 
     def getEmotionClassVectors(self, ctestX,ctestY):
-        # print("getEmotionClassVectors",file=self.errout)
+        """
+        Function creates the respective emotion class vectors, populated with the mean weights
+        of all the documents belonging to that class.
+        arguments: ctestX - input dataset, ctestY - observed data
+        """
         emotionWeightMap = dict(zip(self.tf.primaryEmotions,[[0.0]*len(self.tf.lexicon) for _ in range(len(self.tf.primaryEmotions))]))
         docEmotionCnt = {}
         docVectors = self.tf.getDocumentWeightVectors(ctestX)
+        #count number of documents for each emotion
         for (i,emotion) in enumerate(ctestY):
             emotionWeightMap[emotion] = [x+y for x,y in zip(emotionWeightMap[emotion],docVectors[i])]
             docEmotionCnt[emotion] = docEmotionCnt[emotion]+1 if emotion in docEmotionCnt else 1
 
+        #normalize the vectors
         for e in emotionWeightMap.keys():
             emotionWeightMap[e] = [x/docEmotionCnt[e] for x in emotionWeightMap[e]]
 
         return emotionWeightMap
 
     def predict(self, query):
-    #todo:cleanup test data
+        """
+        Simple function that cleans data, and queries the model for a prediction.
+        The predicted emotion is returned to the caller.
+        arguments: query - a sentence (document)
+        return: predicted emotion
+        """
         query = self.tf.cleanData(query)
         query = self.tf.removeStopWords([query],addToLexicon=False)
         query = self.tf.getDocumentWeightVector(query[0])
@@ -35,7 +50,11 @@ class vsm:
         return  max(args, key=lambda x:x[1])[0]
 
     def printTestConfMatrix(self, ctestX, ctestY):
-        #training confusion matrix
+        """
+        Function to print the confusion matrix for the training data.
+        arguments: ctestX - training dataset, ctestY - observed data
+        return: none
+        """
         predY=[]
         for (i,test) in enumerate(ctestX):
             print("test %d\r" % (i+1),end='')
@@ -47,10 +66,19 @@ class vsm:
 
         print(accuracy)
 
+        #print correctly classified over total values
         for k in accuracy:
             print(k,accuracy[k][k]/sum(accuracy[k].values()))
 
     def fit(self, verbose=False):
+        """
+        Function to fit the model to the training data. Performs 3 steps:
+        -clean the data i.e. remove stop words etc,
+        -print cleaned data to a file
+        -compute the emotion class weights
+        arguments: verbose - print extra info
+        return: none
+        """
         print("training vsm...")
         (testX,testY) = self.tf.init()
         ctestX = self.tf.removeStopWords(testX)
