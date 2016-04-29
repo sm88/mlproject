@@ -95,7 +95,7 @@ class gui:
             classifier = self.comboBox["values"].index(self.boxValue.get())
             emo = self.which[classifier].predict(msg)
             msg = msg+' [['+emo+']]   [['+self.boxValue.get()+']]'            
-
+            self.emoVar.set(emo)
             self.img.configure(file="../images/"+emo+".png")
             self.tBox.configure(state="normal")
             self.tBox.insert(END, "Text: "+msg+"\n",emo)
