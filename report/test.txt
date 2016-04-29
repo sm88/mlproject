@@ -1,0 +1,28 @@
+\section{Application Details}
+\vspace*{-1cm}
+\begin{figure}[ht!]
+ \centering
+ \caption{Text classifier application}
+ \includegraphics[width=5in,height=5in]{app} 
+ \label{fig-app-shot}
+\end{figure}
+\vspace*{-0.5cm}
+\begin{table}[ht!]
+\centering
+\label{tab-app-exp}
+\begin{tabular}{l|c|l}
+\textbf{No.} & \textbf{Element} & \textbf{Explanation}\\
+\hline
+1 & Text (String) & Text to be classified. \\
+2 & Text (String) & The prediction made by classifier. \\
+3 & Text (String) & Classifier that made the prediction. \\
+4 & Combobox & Drop down showing available classifiers. \\
+5 & Entry (String) & Data entered by user to query. \\
+6 & Button (String) & Button to classify and print on the textbox. \\
+7 & Button (String) & Button to exit the application. \\
+8 & Label (String) & Large sized font - predicted emotion. \\
+9 & Label (Image) & A smiley depicting the emotion. \\
+10 & Label (String) & The classifying classifier. \\
+\end{tabular}
+\caption{Explanation of app features}
+\end{table}
