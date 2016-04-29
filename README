@@ -6,6 +6,11 @@ dependencies: numpy, sklearn, tkinter
 dev environment: debian jessie (stable)
 tools: yakuake, terminal, sublime text, git, bash, sed
 
+HOW TO RUN:
+cd code
+chmox +x gui.py
+./gui.py
+
 Files:
 	-mlproject
 		-code
