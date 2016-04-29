@@ -1,19 +1,4 @@
-\chapter{Final Submission}
-\section{Problem Statement}
-\label{prob-stmt}
-Detecting emotional state of a person by analyzing a text document
-written by him appear challenging but it is also essential many times due to its various application area. Recognizing the emotion of the text plays a key role in 
-the human-computer interaction. Emotions may be expressed by a person's speech, 
-face  expression  and  written  text  known  as  speech,  facial  and  text  based  emotion 
-respectively. Athough sufficient amount of work has been done by researchers to detect emotion from facial and 
-speech information but recognizing  emotions  from  textual  data  is still a fresh and hot 
-research area. In this project, we have addressed the problem of emotion detection on the basis of text data only.
-\subsection{Why is it interesting}
-\begin{itemize}
-\item Psychologists can better assist their patients by analyzing their session transcripts for any subtle emotions.
-\item Reliable emotion detection can help develop powerful human-computer interaction devices. For example,a computer can analysis the emotion during a text chat session and according display proper emoticons or a computer can read a movie review and then analyze the sentiment of the reviewer.
-\item Deep  emotional  analysis  of  public  data such  as  tweets  and  blogs  could  reveal  interesting  insights into human nature and behavior
-\end{itemize}
+%\chapter{Final Submission}
 \section{Ideas Used From Class}
 \label{ideas-from-class}
 \begin{itemize}
@@ -37,5 +22,58 @@ research area. In this project, we have addressed the problem of emotion detecti
     \item We also had a hands on experience with Weka which is a popular suite
         of machine learning algorithms. We used this tool mainly to visualize the
         training data and to test some standard classification algorithm.
+\end{itemize}
+
+\newpage
+\section{Application Details}
+\vspace*{-1cm}
+\begin{figure}[ht!]
+ \centering
+ \caption{Text classifier application}
+ \includegraphics[width=5in,height=5in]{app} 
+ \label{fig-app-shot}
+\end{figure}
+\vspace*{-0.5cm}
+\begin{table}[ht!]
+\centering
+\label{tab-app-exp}
+\begin{tabular}{l|c|l}
+\textbf{No.} & \textbf{Element} & \textbf{Explanation}\\
+\hline
+1 & Text (String) & Text to be classified. \\
+2 & Text (String) & The prediction made by classifier. \\
+3 & Text (String) & Classifier that made the prediction. \\
+4 & Combobox & Drop down showing available classifiers. \\
+5 & Entry (String) & Data entered by user to query. \\
+6 & Button (String) & Button to classify and print on the textbox. \\
+7 & Button (String) & Button to exit the application. \\
+8 & Label (String) & Large sized font - predicted emotion. \\
+9 & Label (Image) & A smiley depicting the emotion. \\
+10 & Label (String) & The classifying classifier. \\
+\end{tabular}
+\caption{Explanation of app features}
+\end{table}
+\section{Results}
+
+
+\section{Future Work}
+\label{sec-plan-for-sem}
+\begin{enumerate}
+ \item We can try and find more patterns in the dataset like the one shown in the paper. There they've created new words from negative verbs. For example, the input sentence ``I don't love you.'' is transformed to ``I do not love you.'' which is again transformed to ``I do NOTlove you''. Here we see that finally a new word \emph{NOTlove} has been created. Authors claim this helps increase accuracy.
+ \item We can find set differences between various classes on basis of words (words unique to each emotion class), and remove them from stop words list for accurate predictions.
+ \item We can implement naive baye's classifier using bi-gram, tri-gram etc approaches.
+ \item We can develop some application to showcase our models, which will allow changing models dynamically.
+ \item We can also do sentiment analysis of our dataset where we will just check the accuracy of negative and positive emotions(binary classification).
+ \item We can apply some unsupervised learning technique in this problem which will be useful when availability of large annotated dataset is very low.
+\end{enumerate}
+\section{Pointers to literature}
+\begin{itemize}
+ \item The main dataset and paper are mentioned in section \ref{sec-feasibility} and \ref{sec-dataset} respectively.
+ \item The wordnet-affect dataset can be accessed from \url{http://wndomains.fbk.eu/wnaffect.html} although we need to fill out some forms before we are granted a download link.
+ \item The Semeval task 14, is a medical dataset available at \url{http://alt.qcri.org/semeval2015/task14/index.php?id=data-and-tools}.
+ \item Multinomial naive baye's using \textbf{tf-idf} technique can be found at \url{http://sebastianraschka.com/Articles/2014_naive_bayes_1.html}.
+ \item As mentioned in section \ref{sec-plan-for-sem}, SVM could be useful for classification. The paper at \url{http://www.cs.cornell.edu/people/tj/publications/joachims_98a.pdf} presents a good use case.
+ \item For naive baye's we could also add the chi-squared test for confidence computation. Some details are outlined in \url{http://www.dis.uniroma1.it/~leon/didattica/webir/IR11.pdf}.
+ \item Code listing is attached and is publicly available at \url{https://github.com/sm88/mlproject}.
 \end{itemize}
 
