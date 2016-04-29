@@ -16,8 +16,30 @@ class nb:
         arguments: verbose-print extra info?, dat-specify training data file
         return: none
         """
-        self.tf = tfidfhelper()
-        self.clf = GaussianNB()        
+        self.tf = tfidfhelper(dat=dat)
+        self.clf = GaussianNB()
+
+    def printTestConfMatrix(self, ctestX, ctestY):
+        """
+        Function to print the confusion matrix for the training data.
+        arguments: ctestX - training dataset, ctestY - observed data
+        return: none
+        """
+        predY=[]
+        for (i,test) in enumerate(ctestX):
+            print("test %d\r" % (i+1),end='')
+            predY.append(self.predict(test))
+        
+        accuracy = dict(zip(self.tf.primaryEmotions,[dict(zip(self.tf.primaryEmotions,[0]*len(self.tf.primaryEmotions))) for _ in range(len(self.tf.primaryEmotions))]))
+        for e in zip(predY,ctestY):
+            accuracy[e[1]][e[0]] += 1
+
+        #print(accuracy)
+
+        #print correctly classified over total values
+        for k in accuracy:
+            print(k,accuracy[k][k]/sum(accuracy[k].values()))
+            print(k,accuracy[k])
 
     def fit(self, verbose=False):
         """
@@ -41,6 +63,8 @@ class nb:
         docVectorsArray=np.asarray(docVectors)
         ctestYArray=np.asarray(ctestY)
         self.clf.fit(docVectorsArray,ctestYArray)
+        if verbose:
+            self.printTestConfMatrix(ctestX, ctestY)
 
     def predict(self, query):
         """
@@ -58,7 +82,7 @@ class nb:
 
 if __name__ == "__main__":
     obj = nb()
-    obj.fit()
+    obj.fit(verbose=True)
     query=input("enter query(q to quit)? ")
     while query not in ['Q','q']:
         print(obj.predict(query))

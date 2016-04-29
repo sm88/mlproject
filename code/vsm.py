@@ -43,12 +43,12 @@ class vsm:
         """
         query = self.tf.cleanData(query)
         query = self.tf.removeStopWords([query],addToLexicon=False)
-        print(query)
+        # print(query)
         query = self.tf.getDocumentWeightVector(query[0])
         #print(query)
 
         args = [(e,sum([x*y for x,y in zip(query,self.classWts[e])])) for e in self.classWts]
-        print(args)
+        # print(args)
         return  max(args, key=lambda x:x[1])[0]
 
     def printTestConfMatrix(self, ctestX, ctestY):
@@ -62,15 +62,16 @@ class vsm:
             print("test %d\r" % (i+1),end='')
             predY.append(self.predict(test))
         
-        accuracy = dict(zip(self.primaryEmotions,[dict(zip(self.primaryEmotions,[0]*len(self.primaryEmotions))) for _ in range(len(self.primaryEmotions))]))
+        accuracy = dict(zip(self.tf.primaryEmotions,[dict(zip(self.tf.primaryEmotions,[0]*len(self.tf.primaryEmotions))) for _ in range(len(self.tf.primaryEmotions))]))
         for e in zip(predY,ctestY):
             accuracy[e[1]][e[0]] += 1
 
-        print(accuracy)
+        #print(accuracy)
 
         #print correctly classified over total values
         for k in accuracy:
             print(k,accuracy[k][k]/sum(accuracy[k].values()))
+            print(k,accuracy[k])
 
     def fit(self, verbose=False):
         """
@@ -95,8 +96,8 @@ class vsm:
 
 
 if __name__ == "__main__":
-    obj = vsm(verbose=True)
-    obj.fit(verbose=False)
+    obj = vsm()
+    obj.fit(verbose=True)
     query=input("enter query(q to quit)? ")
     while query not in ['Q','q']:
         print(obj.predict(query))

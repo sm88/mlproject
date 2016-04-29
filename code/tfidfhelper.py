@@ -32,7 +32,7 @@ class tfidfhelper:
         #not words
         self.notSwitch = {'arent':'are not','couldnt':'could not','didnt':'did not','doesnt':'does not','dont':'do not','hadnt':'had not','hasnt':'has not','havent':'have not','isnt':'is not','mustnt':'must not','shouldnt':'should not','wasnt':'was not','werent':'were not','wouldnt':'would not'}
 
-        self.doNotConsider = set(['guilty', 'fear'])
+        self.doNotConsider = set(['guilt', 'fear'])
 
     def cleanData(self, ls):
         """
