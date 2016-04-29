@@ -6,6 +6,25 @@ dependencies: numpy, sklearn, tkinter
 dev environment: debian jessie (stable)
 tools: yakuake, terminal, sublime text, git, bash, sed
 
+Files:
+	-mlproject
+		-code
+			-clean.sh
+			-tfidfhelper.py
+			-svm.py
+			-nb.py
+			-vsm.py
+		-data
+			-data.txt
+			-data.valid.class.txt
+			-cleanData.txt
+		-images
+			-logo.png
+			-anger.png
+			-sadness.png
+			-joy.png
+
+
 -The code follows a very simple structure of highly cohesive classes. Initially all data cleanup and model building code was together but we addresssed that issue and broke it down.
 -The main code lives in the aptly named "code" folder. The code is in python3 and uses sklearn and numpy extensively for building models and linear algebra respectively.
 -There are 5 main code files and 1 data cleanup shell script. Following are the names and purposes:
