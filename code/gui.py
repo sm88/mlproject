@@ -5,6 +5,9 @@ from tkinter import scrolledtext as st
 from tkinter import ttk
 from tkinter import N,E,W,S,END
 from vsm import vsm
+from nb import nb
+from svm import svm
+import random
 
 class gui:
     def __init__(self, root):
@@ -13,6 +16,9 @@ class gui:
         self.boxValue.trace("w", self._comboCallback)
         self.emoVar = tk.StringVar()
         self.emoVar.set("Emotion?")
+
+        self.classVar = tk.StringVar()
+        self.classVar.set("VSM")
         self.img = tk.PhotoImage()
         self.img.configure(file='../images/logo.png')
 
@@ -21,12 +27,25 @@ class gui:
         
 
     def trainClassifiers(self):
-        obj = vsm(dat='data.valid.class.txt')
-        obj.fit()
-        self.which = {0:obj}       
+        """
+        Function pre creates objects for all classifiers, so that prediction is fast.
+        An instance dict of those models is created so that they can be indexed easily.
+        arguments: none
+        return: none
+        """
+        modVSM, modNB, modSVM = vsm(), nb(), svm()
+        modVSM.fit()
+        modNB.fit()
+        modSVM.fit()
+        self.which = {0:modVSM,1:modNB,2:modSVM}
 
 
     def _createComponents(self):
+        """
+        Create and initialize all gui components.
+        arguments: none
+        return: none
+        """
         self.root.title('Emotion Classifier')
         self.root.resizable(False, False)
 
@@ -38,6 +57,7 @@ class gui:
         self.lClassifier = tk.Label(self.root, text="Classifier:")
         self.bExit = tk.Button(self.root, text="Quit", command = self._quitCallback)
         self.emo = tk.Label(self.root, font=("Ubuntu", 24), textvariable=self.emoVar, fg="blue")
+        self.whichClassifier = tk.Label(self.root, font=("Ubuntu", 18), textvariable=self.classVar, fg="blue")
         self.smiley = tk.Label(self.root,image=self.img)
 
         self.tBox.grid(row=0, column=0, columnspan=24)
@@ -47,8 +67,9 @@ class gui:
         self.lQuery.grid(row=2, column=0, sticky=W)
         self.fQuery.grid(row=2, column=1, columnspan=22, sticky=W+E+N+S)
         self.bClassify.grid(row=2, column=23, columnspan=1, sticky=W+E)
-        self.emo.grid(row=3,column=0,columnspan=14,sticky=E)
-        self.smiley.grid(row=3,column=15,sticky=E)
+        self.emo.grid(row=3,column=0,columnspan=6,sticky=W)
+        self.smiley.grid(row=3,column=9,sticky=N+E+W+S)
+        self.whichClassifier.grid(row=3,column=20,sticky=E)
         # self.status.grid(row=3, column=0, columnspan=12, sticky=W+E+N+S)
         # self.emotion.grid(row=3,column=12, columnspan=12, sticky=W+E+N+S)
         
@@ -58,32 +79,63 @@ class gui:
 
         self.fQuery.bind('<Return>',self._returnCallback)
 
+        #create some tags
+        self.tBox.tag_configure("anger", foreground="red")
+        self.tBox.tag_configure("joy", foreground="green")
+        self.tBox.tag_configure("sadness", foreground="gray")
+
     def _clickCallback(self):
+        """
+        Callback function to update gui when the a query has been entered
+        arguments: none
+        return: none
+        """
         if self.fQuery.get():
             msg = self.fQuery.get()
             classifier = self.comboBox["values"].index(self.boxValue.get())
             emo = self.which[classifier].predict(msg)
-            msg = msg+' [['+emo+']] '
-            self.emoVar.set(emo)
+            msg = msg+' [['+emo+']]   [['+self.boxValue.get()+']]'            
+
             self.img.configure(file="../images/"+emo+".png")
             self.tBox.configure(state="normal")
-            self.tBox.insert(END, "Text: "+msg+"\n")
+            self.tBox.insert(END, "Text: "+msg+"\n",emo)
             self.tBox.configure(state="disabled")
             self.fQuery.delete(0,len(msg))
 
     def _quitCallback(self):
+        """
+        Callback to quit application
+        arguments: none
+        return: none
+        """
         print('exiting...')
         self.root.destroy()
         sys.exit(0)
 
     def _returnCallback(self, event):
+        """
+        Callback to handle <enter> action on textfield
+        arguments: triggering event
+        return: none
+        """
         self._clickCallback()
 
     def _comboCallback(self, *args):
+        """
+        Callback to change classifier label, when new one selected from the combobox
+        arguments: list of values in combobox
+        return: none
+        """
         #set new classifier here
+        self.classVar.set(self.boxValue.get())
         print(self.comboBox["values"].index(self.boxValue.get()))
 
     def run(self):
+        """
+        Function to start main loop of application
+        argument: none
+        return: none
+        """
         self.root.mainloop()
 
 if __name__ == "__main__":
