@@ -7,6 +7,7 @@ from tkinter import N,E,W,S,END
 from vsm import vsm
 from nb import nb
 from svm import svm
+import random
 
 class gui:
     def __init__(self, root):
@@ -67,16 +68,21 @@ class gui:
 
         self.fQuery.bind('<Return>',self._returnCallback)
 
+        #create some tags
+        self.tBox.tag_configure("anger", foreground="red")
+        self.tBox.tag_configure("joy", foreground="green")
+        self.tBox.tag_configure("sadness", foreground="gray")
+
     def _clickCallback(self):
         if self.fQuery.get():
             msg = self.fQuery.get()
             classifier = self.comboBox["values"].index(self.boxValue.get())
             emo = self.which[classifier].predict(msg)
-            msg = msg+' [['+emo+']]   [['+self.boxValue.get()+']]'
-            self.emoVar.set(emo)            
+            msg = msg+' [['+emo+']]   [['+self.boxValue.get()+']]'            
+
             self.img.configure(file="../images/"+emo+".png")
             self.tBox.configure(state="normal")
-            self.tBox.insert(END, "Text: "+msg+"\n")
+            self.tBox.insert(END, "Text: "+msg+"\n",emo)
             self.tBox.configure(state="disabled")
             self.fQuery.delete(0,len(msg))
 
