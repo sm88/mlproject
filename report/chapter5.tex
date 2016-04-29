@@ -1,5 +1,5 @@
 %\chapter{Submission 1 ($12^{th} March)$}
-\chapter{}
+%\chapter{}
 \section{Project Description}
 \subsection{Problem Statement}
 Detecting emotional state of a person by analyzing a text document
@@ -47,15 +47,17 @@ $\bullet$I got a present today. & Joy
 
 \newpage
 \section{Papers}
-The paper implemented is mentioned in \ref{sec-feasibility}.
+\label{paper-details}
+%The paper implemented is mentioned in \ref{sec-feasibility}.
+ We will be closely following the paper Taner Danisman and Adil Alpkocak titled \href{http://people.cs.deu.edu.tr/alpkocak/Papers/AISB08.pdf}{\textbf{Feeler: Emotion Classification of Text Using Vector Space Model}}
 
 \section{Dataset}
-The dataset used is mentioned in \ref{sec-dataset}. The dataset has around 7500 sentences. We will use 2/$3^{rd}$ of the dataset for training and cross validation and the rest for testing.
+The paper mentions the \href{https://github.com/bogdanneacsa/tts-master/blob/master/ISEAR/DATA.csv}{ISEAR} dataset, which is composed of around 7500 annotated sentences. The dataset has around 7500 sentences. We will use 2/$3^{rd}$ of the dataset for training and cross validation and the rest for testing.
 
 \section{Different Methods Applied to this problem}
 \subsection{Vector Space Model}
 \begin{itemize}
-\item As mentioned in section \ref{subsec-basic-details}, in line with the paper, we will be using VSM for out initial implementation.
+\item As mentioned in section \ref{paper-details}, in line with the paper, we will be using VSM for out initial implementation.
 \item Put simply, we will have representative vectors for each of our emotion classes, \textbf{joy, anger and sadness}. Then we will transform our input sentence in the same way we found our representative vectors and find the cosine similarity with each of them.
 \item These similarities will be used to calculate probabilities of the input being in some emotion class and the most probable class will be output.
 \item The vectors will comprise of weights in terms of \textbf{tf-idf} frequencies. We could simply use word frequency instead but:
