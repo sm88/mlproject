@@ -73,8 +73,12 @@
   \item There were some scattered braces and square brackets as well as some non-ascii characters, that took a while to catch.
   \item Some sentences were repeated for multiple classes.
  \end{itemize}
- \item Following are the results of applying the predictions to training data itself. Each row specifies the distribution of the samples belonging to a specific class.\ref{tab-confusion-vsm}).
-\end{itemize}
+ \end{itemize}
+ \newpage
+ \subsection{Implementation related results}
+ \label{subsec-impl-rel-result}
+ Following are the results of applying the predictions to training data itself. Each row specifies the distribution of the samples belonging to a specific class. We trained on on 8397 sentences (documents) and then tried predicting them using our classifiers.\ref{tab-confusion-vsm}). \\
+
 \begin{center}
 	\begin{figure}[ht!]
 	\label{fig-clean-dataset}	
@@ -82,16 +86,15 @@
 	\caption{Cleaned partial ISEAR dataset}
 	\end{figure}
 \end{center}	
-
 \begin{table}[ht!]
   \centering
   \label{tab-confusion-vsm}
   \begin{tabular}{c|c|c|c|c}
   & \textbf{anger} & \textbf{sadness} & \textbf{joy} & \emph{Accuracy \%}\\
   \hline
-  \textbf{anger} & 1502 & 349 & 312 & 69.4 \\
-  \textbf{sadness} & 247 & 1501 & 405 & 69.7 \\
-  \textbf{joy} & 26 & 61 & 1005 & 92.0 \\
+  \textbf{anger} & 1745 & 469 & 201 & 72.25 \\
+  \textbf{sadness} & 265 & 1832 & 258 & 77.70 \\
+  \textbf{joy} & 60 & 1832 & 151 & 85.48 \\
   \end{tabular}
   \caption{Confusion matrix for training set using vsm}
 \end{table}
@@ -102,9 +105,9 @@
   \begin{tabular}{c|c|c|c|c}
   & \textbf{anger} & \textbf{sadness} & \textbf{joy} & \emph{Accuracy \%}\\
   \hline
-  \textbf{anger} & 2100 & 56 & 7 & 97.1 \\
-  \textbf{sadness} & 57 & 2077 & 19 & 96.5 \\
-  \textbf{joy} & 8 & 14 & 1070 & 97.9 \\
+  \textbf{anger} & 2342 & 65 & 8 & 96.97 \\
+  \textbf{sadness} & 70 & 2263 & 22 & 96.09 \\
+  \textbf{joy} & 12 & 18 & 1424 & 97.94 \\
   \end{tabular}
   \caption{Confusion matrix for training set using svm}
 \end{table}
@@ -115,13 +118,37 @@
   \begin{tabular}{c|c|c|c|c}
   & \textbf{anger} & \textbf{sadness} & \textbf{joy} & \emph{Accuracy \%}\\
   \hline
-  \textbf{anger} & 1615 & 406 & 142 & 74.6 \\
-  \textbf{sadness} & 5 & 1790 & 358 & 83.1 \\
-  \textbf{joy} & 0 & 1 & 1091 & 99.9 \\
+  \textbf{anger} & 1829 & 422 & 164 & 75.73 \\
+  \textbf{sadness} & 5 & 1987 & 363 & 84.37 \\
+  \textbf{joy} & 0 & 1 & 1453 & 99.99 \\
   \end{tabular}
   \caption{Confusion matrix for training set using nb}
 \end{table}
+\newpage
+Following are some numbers based on unseen data for the 3 classifiers:
 
+\begin{table}[ht!]
+  \centering
+  \label{tab-f1score}
+  \begin{tabular}{c|c|c}
+  & \textbf{f1 score} & \textbf{accuracy \%} \\
+  \hline
+  \textbf{vsm} & 0.436 & 44.24 \\
+  \textbf{svm} & 0.403 & 40.93 \\
+  \textbf{nb} & 0.459 & 47.67 \\
+  \end{tabular}
+  \caption{f1 score and accuracy on unseen data}
+\end{table}
+
+\section{Conclusions}
+\label{sec-conclusion}
+\begin{itemize}
+\item We found that gaussian naive baye's outperformed the other 2 classifiers. VSM came in a close second.
+\item The result is a bit expected as NB is the goto algorithm for text classification. Since we are using continuous valued attributes (tf-idf weights) GNB was an obvious choice.
+\item In out opinion SVM performed poorly because of the nature of the data. First of all it was sparse and secondly there was quite a bit of overlap in the data.
+\item If a word is not present in the lexicon, the prediction accuracy suffers highly.
+\item In VSM we tried other measures of similarity but again due to the nature of data reverted back to cosine similarity, as it is considered best for sparse data. Other measures like euclidian distance, rbf-kernel are also used but cosine similarity outperforms them over sparse data.
+\end{itemize}
 
 \newpage
 \section{Future Work}
@@ -130,7 +157,6 @@
  \item We can try and find more patterns in the dataset like the one shown in the paper. There they've created new words from negative verbs. For example, the input sentence ``I don't love you.'' is transformed to ``I do not love you.'' which is again transformed to ``I do NOTlove you''. Here we see that finally a new word \emph{NOTlove} has been created. Authors claim this helps increase accuracy.
  \item We can find set differences between various classes on basis of words (words unique to each emotion class), and remove them from stop words list for accurate predictions.
  \item We can implement naive baye's classifier using bi-gram, tri-gram etc approaches.
- \item We can develop some application to showcase our models, which will allow changing models dynamically.
  \item We can also do sentiment analysis of our dataset where we will just check the accuracy of negative and positive emotions(binary classification).
  \item We can apply some unsupervised learning technique in this problem which will be useful when availability of large annotated dataset is very low.
 \end{enumerate}
