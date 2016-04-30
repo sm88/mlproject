@@ -145,7 +145,7 @@ Following are some numbers based on unseen data for the 3 classifiers:
 \begin{itemize}
 \item We found that gaussian naive baye's outperformed the other 2 classifiers. VSM came in a close second.
 \item The result is a bit expected as NB is the goto algorithm for text classification. Since we are using continuous valued attributes (tf-idf weights) GNB was an obvious choice.
-\item In out opinion SVM performed poorly because of the nature of the data. First of all it was sparse and secondly there was quite a bit of overlap in the data.
+\item In our opinion SVM performed poorly because of the nature of the data. First of all it was sparse and secondly there was quite a bit of overlap in the data.
 \item If a word is not present in the lexicon, the prediction accuracy suffers highly.
 \item In VSM we tried other measures of similarity but again due to the nature of data reverted back to cosine similarity, as it is considered best for sparse data. Other measures like euclidian distance, rbf-kernel are also used but cosine similarity outperforms them over sparse data.
 \end{itemize}
