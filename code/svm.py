@@ -60,11 +60,7 @@ class svm:
 
 if __name__ == "__main__":
     obj = svm()
-<<<<<<< HEAD
-    obj.fit()
-=======
     obj.fit(verbose=False)
->>>>>>> 3ae239843f586e79642cb12eb8fa303d89cabffe
     query=input("enter query(q to quit)? ")
     while query not in ['Q','q']:
         print(obj.predict(query))
