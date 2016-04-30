@@ -31,19 +31,22 @@ Files:
 
 
 -The code follows a very simple structure of highly cohesive classes. Initially all data cleanup and model building code was together but we addresssed that issue and broke it down.
+
 -The main code lives in the aptly named "code" folder. The code is in python3 and uses sklearn and numpy extensively for building models and linear algebra respectively.
+
 -There are 5 main code files and 1 data cleanup shell script. Following are the names and purposes:
-	-clean.sh: to clean the data downloaded from the ISEAR database. This script is highly specialized for the ISEAR data and should not be used on data in other formats. It uses sed to clean the data via application of regular expressions.
 
-	-tfidfhelper.py: this is a helper class which serves the dual purpose of cleaning the training data and building the tf-idf vectors, as specified in the paper we are following. Since we require building a lexicon of all unique words in the dataset, cleaning the data and some other algorithms related to tf-idf are closely linked and hence they are present in the same class. The code is highly modular, broken up into self explanatory functions, with adequate documentation. The arguments and return data are appended to that explanation.
+	1. clean.sh: to clean the data downloaded from the ISEAR database. This script is highly specialized for the ISEAR data and should not be used on data in other formats. It uses sed to clean the data via application of regular expressions.
 
-	-vsm.py: This is the first model that we built. The tfidfhelper.py class is composed with this and provides the required functionality to create tfidf vectors. Other than that 3 important functions are defined. In spirit of the sklearn API 2 of those are aptly named "fit" and "predict". The 3rd function in this class computes the weight vectors corresponding to each class and then the predict method uses it to compute dot products with the query vector. The highest similarity result is declared as the predicted emotion. A user need only initialize the class and call the fit method to build the model. It taked around 30 secs to build the model after which sentences can be passed to the "predict" function get the predicted emotion.
+	2. tfidfhelper.py: this is a helper class which serves the dual purpose of cleaning the training data and building the tf-idf vectors, as specified in the paper we are following. Since we require building a lexicon of all unique words in the dataset, cleaning the data and some other algorithms related to tf-idf are closely linked and hence they are present in the same class. The code is highly modular, broken up into self explanatory functions, with adequate documentation. The arguments and return data are appended to that explanation.
 
-	-svm.py: Quite similar to the above approach, this class also composes tfidfhelper.py. There is no need here to build emotion class weight vectors, hence that method is not used. However, "fit" and "predict" are present and work exactly the same way. We have directly used LinearSVC from sklean API and tuned the parameters.
+	3. vsm.py: This is the first model that we built. The tfidfhelper.py class is composed with this and provides the required functionality to create tfidf vectors. Other than that 3 important functions are defined. In spirit of the sklearn API 2 of those are aptly named "fit" and "predict". The 3rd function in this class computes the weight vectors corresponding to each class and then the predict method uses it to compute dot products with the query vector. The highest similarity result is declared as the predicted emotion. A user need only initialize the class and call the fit method to build the model. It taked around 30 secs to build the model after which sentences can be passed to the "predict" function get the predicted emotion.
 
-	-nb.py: Since text classification is a popular application of naive baye's algorithm, we used it for our predictions too. However, our data is continuous (tf-idf) so we have used Gaussian Naive Baye's to classify the text. Again as in case of svm we have similar API and used GaussianNB from sklearn libraries.
+	4. svm.py: Quite similar to the above approach, this class also composes tfidfhelper.py. There is no need here to build emotion class weight vectors, hence that method is not used. However, "fit" and "predict" are present and work exactly the same way. We have directly used LinearSVC from sklean API and tuned the parameters.
 
-	-gui.py: Very simple GUI built using the tkinter library. This is what the user is intended to run (./gui.py). It has a basic text area, to show classification result, a textfield to allow input, an exit button, a classify button (<return> works as well) and a couple of labels and images to depict emotions. There is a combobox, which allows changing classifiers at will.
+	5. nb.py: Since text classification is a popular application of naive baye's algorithm, we used it for our predictions too. However, our data is continuous (tf-idf) so we have used Gaussian Naive Baye's to classify the text. Again as in case of svm we have similar API and used GaussianNB from sklearn libraries.
+
+	6. gui.py: Very simple GUI built using the tkinter library. This is what the user is intended to run (./gui.py). It has a basic text area, to show classification result, a textfield to allow input, an exit button, a classify button (<return> works as well) and a couple of labels and images to depict emotions. There is a combobox, which allows changing classifiers at will.
 
 The application can be run as:
 1)	./gui.py or python3 gui.py
