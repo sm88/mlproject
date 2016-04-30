@@ -17,7 +17,7 @@ class svm:
         arguments: verbose-print extra info?, dat-specify training data file
         return: none
         """
-        parameters = {'kernel':('linear'), 'C':[0.1,0.2,0.4,0.6,0.8]}
+        parameters = {'kernel':['linear'], 'C':[1,4,8,10]}
         self.tf = tfidfhelper()
         self.svmc = sv.SVC()
         self.clf = grid_search.GridSearchCV(self.svmc, parameters,verbose=4)
