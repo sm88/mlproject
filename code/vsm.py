@@ -43,6 +43,9 @@ class vsm:
         """
         query = self.tf.cleanData(query)
         query = self.tf.removeStopWords([query],addToLexicon=False)
+
+        qtag = [(word, 1 if word in self.tf.lexicon else 0) for word in query[0].split()]
+        print(qtag)
         # print(query)
         query = self.tf.getDocumentWeightVector(query[0])
         #print(query)
@@ -97,7 +100,7 @@ class vsm:
 
 if __name__ == "__main__":
     obj = vsm()
-    obj.fit(verbose=True)
+    obj.fit(verbose=False)
     query=input("enter query(q to quit)? ")
     while query not in ['Q','q']:
         print(obj.predict(query))
