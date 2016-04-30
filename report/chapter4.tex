@@ -145,7 +145,7 @@ Following are some numbers based on unseen data for the 3 classifiers:
 \begin{itemize}
 \item We found that gaussian naive baye's outperformed the other 2 classifiers. VSM came in a close second.
 \item The result is a bit expected as NB is the goto algorithm for text classification. Since we are using continuous valued attributes (tf-idf weights) GNB was an obvious choice.
-\item In out opinion SVM performed poorly because of the nature of the data. First of all it was sparse and secondly there was quite a bit of overlap in the data.
+\item In our opinion SVM performed poorly because of the nature of the data. First of all it was sparse and secondly there was quite a bit of overlap in the data.
 \item If a word is not present in the lexicon, the prediction accuracy suffers highly.
 \item In VSM we tried other measures of similarity but again due to the nature of data reverted back to cosine similarity, as it is considered best for sparse data. Other measures like euclidian distance, rbf-kernel are also used but cosine similarity outperforms them over sparse data.
 \end{itemize}
@@ -153,13 +153,13 @@ Following are some numbers based on unseen data for the 3 classifiers:
 \newpage
 \section{Future Work}
 \label{sec-plan-for-sem}
-\begin{enumerate}
+\begin{itemize}}
  \item We can try and find more patterns in the dataset like the one shown in the paper. There they've created new words from negative verbs. For example, the input sentence ``I don't love you.'' is transformed to ``I do not love you.'' which is again transformed to ``I do NOTlove you''. Here we see that finally a new word \emph{NOTlove} has been created. Authors claim this helps increase accuracy.
  \item We can find set differences between various classes on basis of words (words unique to each emotion class), and remove them from stop words list for accurate predictions.
  \item We can implement naive baye's classifier using bi-gram, tri-gram etc approaches.
  \item We can also do sentiment analysis of our dataset where we will just check the accuracy of negative and positive emotions(binary classification).
  \item We can apply some unsupervised learning technique in this problem which will be useful when availability of large annotated dataset is very low.
-\end{enumerate}
+\end{itemize}}
 \section{Pointers to literature}
 \begin{itemize}
  \item The wordnet-affect dataset can be accessed from \url{http://wndomains.fbk.eu/wnaffect.html} although we need to fill out some forms before we are granted a download link.
